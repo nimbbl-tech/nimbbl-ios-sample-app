@@ -1,0 +1,16 @@
+PODS:
+  - Nimbbl-SDK (1.0.1)
+
+DEPENDENCIES:
+  - Nimbbl-SDK (~> 1.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Nimbbl-SDK
+
+SPEC CHECKSUMS:
+  Nimbbl-SDK: d3a33bb6340b4b41aa6c7e6a398607cbc3848837
+
+PODFILE CHECKSUM: c30a9526e3ccad3dbe550f1db9af3552f6adb8b8
+
+COCOAPODS: 1.10.1
