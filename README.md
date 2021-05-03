@@ -1,15 +1,15 @@
 # nimbbl-ios-sample-app
 
-This repository implements pod Nimbbl-SDK.
+Sample app for Nimbbl Checkout Integration
 
-## Usage
-To run the example project, clone the repo, and run `pod install`.
+## Steps to build the project
+1. Download the source code
+2. Open the `PaymentApp.xcworkspace`
+3. Add your `<access_key>` in ViewController.swift
+4. Run the project 
 
-## Installation | Docs
 
-Nimbbl-SDK is available through [CocoaPods]. To install
-it, simply add the following line to your Podfile
+Note:
+1. This is just a sample project which will help you understand how to integration the Nimbbl Checkout in iOS app. 
 
-```ruby
-pod 'Nimbbl-SDK', '~> 1.0.1'
-```
+For any assistance, you can reach us support@nimbbl.biz
