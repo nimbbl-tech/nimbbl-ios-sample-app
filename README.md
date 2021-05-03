@@ -5,7 +5,7 @@ Sample app for Nimbbl Checkout Integration
 ## Steps to build the project
 1. Download the source code
 2. Open the `PaymentApp.xcworkspace`
-3. Add your `<access_key>` in ViewController.swift
+3. Add your access key in place of `<access_key>` in ViewController.swift
 4. Run the project 
 
 
