@@ -7,6 +7,7 @@
 
 import UIKit
 import NimbblCheckoutSDK
+import MBProgressHUD
 
 typealias JSONObject = Dictionary<String,Any>
 
@@ -47,6 +48,11 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
     }
     
     @objc func createOrderAction(sender: UIButton){
+        
+        let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+        hud.label.text = "Loading ..."
+        hud.mode = .indeterminate
+        
         let product = arrProducts[sender.tag]
         let parameters = "{ \"product_id\": \(product.productId) }"
         let postData = parameters.data(using: .utf8)
@@ -58,7 +64,7 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
           guard let data = data else {
-            print(String(describing: error))
+            print("API Error:",String(describing: error))
             return
           }
           print(String(data: data, encoding: .utf8)!)
@@ -73,12 +79,13 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
                     guard let orderId = item["order_id"] as? String else { return }
                     
                     DispatchQueue.main.async {
+                        hud.hide(animated: true)
                         self.openPaymentScreen(orderId: orderId)
                     }
                 }
             }
             catch {
-                
+                print("Error while parsing")
             }
          
         }
@@ -115,9 +122,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.layer.cornerRadius = 10.0
-    }
     
 }
 
@@ -130,11 +134,13 @@ class ProductTVC: UITableViewCell {
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var lblAmount: UILabel!
     
+    @IBOutlet weak var mViContent: UIView!
     
     @IBOutlet weak var mBtnBuyNow: UIButton!
     
     override func awakeFromNib() {
-        contentView.layer.masksToBounds = true
+        mViContent.layer.cornerRadius = 10.0
+        mViContent.layer.masksToBounds = true
     }
     
     func populateData(product: ProductModal){

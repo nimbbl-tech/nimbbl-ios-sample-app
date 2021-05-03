@@ -1,16 +1,20 @@
 PODS:
+  - MBProgressHUD (1.2.0)
   - Nimbbl-SDK (1.0.1)
 
 DEPENDENCIES:
+  - MBProgressHUD
   - Nimbbl-SDK (~> 1.0.1)
 
 SPEC REPOS:
   trunk:
+    - MBProgressHUD
     - Nimbbl-SDK
 
 SPEC CHECKSUMS:
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   Nimbbl-SDK: d3a33bb6340b4b41aa6c7e6a398607cbc3848837
 
-PODFILE CHECKSUM: c30a9526e3ccad3dbe550f1db9af3552f6adb8b8
+PODFILE CHECKSUM: 558935620ab6af36e03be123a5212a2c538a7e06
 
 COCOAPODS: 1.10.1
