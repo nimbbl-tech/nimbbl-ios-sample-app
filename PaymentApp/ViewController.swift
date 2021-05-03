@@ -23,7 +23,7 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        nimbblChekout = NimbblCheckout(accessKey: " Your access Key ", delegate: self)
+        nimbblChekout = NimbblCheckout(accessKey: "<access_key>", delegate: self)
         
         for i in 1...2{
             
