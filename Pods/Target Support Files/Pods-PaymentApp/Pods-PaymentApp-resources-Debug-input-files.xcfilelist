@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-PaymentApp/Pods-PaymentApp-resources.sh
+${PODS_ROOT}/Nimbbl-SDK/NimbblCheckoutSDK.framework/Info.plist
+${PODS_ROOT}/Nimbbl-SDK/NimbblCheckoutSDK.framework/NimbblCheckoutSDK
+${PODS_ROOT}/Nimbbl-SDK/NimbblCheckoutSDK.framework/AccessibilityResources.bundle
+${PODS_ROOT}/Nimbbl-SDK/NimbblCheckoutSDK.framework/Headers
+${PODS_ROOT}/Nimbbl-SDK/NimbblCheckoutSDK.framework/Modules
+${PODS_ROOT}/Nimbbl-SDK/NimbblCheckoutSDK.framework/_CodeSignature

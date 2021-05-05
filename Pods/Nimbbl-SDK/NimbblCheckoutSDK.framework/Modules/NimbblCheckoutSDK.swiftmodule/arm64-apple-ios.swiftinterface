@@ -1,0 +1,13 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name NimbblCheckoutSDK
+import Foundation
+@_exported import NimbblCheckoutSDK
+import Swift
+import UIKit
+@objc open class NimbblCheckout : ObjectiveC.NSObject {
+  @objc public init(accessKey: Swift.String, delegate: NimbblCheckoutSDK.NimbblCheckoutDelegate)
+  @objc public func show(options: [Swift.String : Any], displayController: UIKit.UIViewController)
+  @objc deinit
+  @objc override dynamic public init()
+}
