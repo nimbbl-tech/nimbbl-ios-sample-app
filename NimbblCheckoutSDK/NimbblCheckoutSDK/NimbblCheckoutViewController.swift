@@ -120,7 +120,10 @@ final class NimbblCheckoutViewController: UIViewController {
                                 do {
                                     let jsonData = try JSONSerialization.jsonObject(with: decodeData!, options: .allowFragments) as? [String : Any] ?? [:]
                                     if isUAT { print("Nimbbl response: ", jsonData) }
-                                    let status = jsonData["status"] as? String ?? ""
+                                    
+                                    let payload = jsonData["payload"] as? [String : Any] ?? [:]
+                                    
+                                    let status = payload["status"] as? String ?? ""
 
                                     if status.lowercased() == "success" {
                                         self.dismiss(animated: false, completion: {
@@ -128,7 +131,7 @@ final class NimbblCheckoutViewController: UIViewController {
                                         })
                                         return
                                     }
-                                    else if let reason = jsonData["reason"] as? String{
+                                    else if let reason = payload["reason"] as? String{
                                         message = reason
                                     }
                                 }
