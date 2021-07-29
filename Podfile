@@ -7,6 +7,5 @@ target 'PaymentApp' do
 
   # Pods for PaymentApp
 
-pod 'Nimbbl-SDK' #, '~> 1.0.1'
 pod 'MBProgressHUD'
 end

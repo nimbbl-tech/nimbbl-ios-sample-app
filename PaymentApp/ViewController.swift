@@ -23,7 +23,8 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        nimbblChekout = NimbblCheckout(accessKey: "<access_key>", delegate: self)
+        nimbblChekout = NimbblCheckout(accessKey: "access_key_1MwvMkKkweorz0ry", delegate: self)
+        nimbblChekout.enableUATEnvironment = true
         
         for i in 1...2{
             
@@ -39,6 +40,10 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
         tblProducts.dataSource = self
         tblProducts.delegate = self
         
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
     }
     
     
@@ -57,7 +62,7 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
         let parameters = "{ \"product_id\": \(product.productId) }"
         let postData = parameters.data(using: .utf8)
 
-        var request = URLRequest(url: URL(string: "https://shop.nimbbl.tech/api/orders/create")!)
+        var request = URLRequest(url: URL(string: "https://uatshop.nimbbl.tech/api/orders/create")!)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
         request.httpBody = postData
