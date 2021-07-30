@@ -61,7 +61,7 @@ final class NimbblCheckoutViewController: UIViewController {
     }
     
     fileprivate func initViews(){
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         
         view.addSubview(webView)
         view.addSubview(activityIndicator)
@@ -127,7 +127,7 @@ final class NimbblCheckoutViewController: UIViewController {
 
                                     if status.lowercased() == "success" {
                                         self.dismiss(animated: false, completion: {
-                                            self.delegate.onPaymentSuccess(jsonData)
+                                            self.delegate.onPaymentSuccess(payload)
                                         })
                                         return
                                     }
