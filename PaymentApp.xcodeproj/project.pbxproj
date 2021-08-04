@@ -14,6 +14,7 @@
 		0A47048625FB41090081A76E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A47048525FB41090081A76E /* Assets.xcassets */; };
 		0A47048925FB41090081A76E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A47048725FB41090081A76E /* LaunchScreen.storyboard */; };
 		214A02ABD5DA73CB6394CD60 /* Pods_PaymentApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44B826AC97AAF0151B206BF /* Pods_PaymentApp.framework */; };
+		77500A7126BAC13E005469F7 /* NimbblCheckoutSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77500A7026BAC13E005469F7 /* NimbblCheckoutSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		0A47048525FB41090081A76E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A47048825FB41090081A76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A47048A25FB41090081A76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77500A7026BAC13E005469F7 /* NimbblCheckoutSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NimbblCheckoutSDK.framework; sourceTree = "<group>"; };
 		A47C4524747F2A48B6A0A05C /* Pods-PaymentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp.debug.xcconfig"; path = "Target Support Files/Pods-PaymentApp/Pods-PaymentApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C44B826AC97AAF0151B206BF /* Pods_PaymentApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C733450FA3596C61A4F277 /* Pods-PaymentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp.release.xcconfig"; path = "Target Support Files/Pods-PaymentApp/Pods-PaymentApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				214A02ABD5DA73CB6394CD60 /* Pods_PaymentApp.framework in Frameworks */,
+				77500A7126BAC13E005469F7 /* NimbblCheckoutSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +93,7 @@
 				0A47048525FB41090081A76E /* Assets.xcassets */,
 				0A47048725FB41090081A76E /* LaunchScreen.storyboard */,
 				0A47048A25FB41090081A76E /* Info.plist */,
+				77500A7026BAC13E005469F7 /* NimbblCheckoutSDK.framework */,
 			);
 			path = PaymentApp;
 			sourceTree = "<group>";

@@ -1,0 +1,11 @@
+framework module NimbblCheckoutSDK {
+  umbrella header "NimbblCheckoutSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module NimbblCheckoutSDK.Swift {
+    header "NimbblCheckoutSDK-Swift.h"
+    requires objc
+}
