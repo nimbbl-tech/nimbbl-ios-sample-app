@@ -13,20 +13,9 @@
 		0A47048425FB41080081A76E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A47048225FB41080081A76E /* Main.storyboard */; };
 		0A47048625FB41090081A76E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A47048525FB41090081A76E /* Assets.xcassets */; };
 		0A47048925FB41090081A76E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A47048725FB41090081A76E /* LaunchScreen.storyboard */; };
-		0A937486269DC51100D1843A /* NimbblCheckoutSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A937484269DC4FA00D1843A /* NimbblCheckoutSDK.framework */; };
-		0A937487269DC51100D1843A /* NimbblCheckoutSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A937484269DC4FA00D1843A /* NimbblCheckoutSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		214A02ABD5DA73CB6394CD60 /* Pods_PaymentApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44B826AC97AAF0151B206BF /* Pods_PaymentApp.framework */; };
+		77500A7126BAC13E005469F7 /* NimbblCheckoutSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77500A7026BAC13E005469F7 /* NimbblCheckoutSDK.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0A937483269DC4FA00D1843A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A93747F269DC4FA00D1843A /* NimbblCheckoutSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0AAD7EC2269847FD00ED064B;
-			remoteInfo = NimbblCheckoutSDK;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0A4704B725FB475B0081A76E /* CopyFiles */ = {
@@ -35,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0A937487269DC51100D1843A /* NimbblCheckoutSDK.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +38,7 @@
 		0A47048525FB41090081A76E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A47048825FB41090081A76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A47048A25FB41090081A76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A93747F269DC4FA00D1843A /* NimbblCheckoutSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NimbblCheckoutSDK.xcodeproj; path = NimbblCheckoutSDK/NimbblCheckoutSDK.xcodeproj; sourceTree = "<group>"; };
+		77500A7026BAC13E005469F7 /* NimbblCheckoutSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NimbblCheckoutSDK.framework; sourceTree = "<group>"; };
 		A47C4524747F2A48B6A0A05C /* Pods-PaymentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp.debug.xcconfig"; path = "Target Support Files/Pods-PaymentApp/Pods-PaymentApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C44B826AC97AAF0151B206BF /* Pods_PaymentApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C733450FA3596C61A4F277 /* Pods-PaymentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp.release.xcconfig"; path = "Target Support Files/Pods-PaymentApp/Pods-PaymentApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,7 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				214A02ABD5DA73CB6394CD60 /* Pods_PaymentApp.framework in Frameworks */,
-				0A937486269DC51100D1843A /* NimbblCheckoutSDK.framework in Frameworks */,
+				77500A7126BAC13E005469F7 /* NimbblCheckoutSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +68,6 @@
 		0A47047025FB41080081A76E = {
 			isa = PBXGroup;
 			children = (
-				0A93747F269DC4FA00D1843A /* NimbblCheckoutSDK.xcodeproj */,
 				0A47047B25FB41080081A76E /* PaymentApp */,
 				0A47047A25FB41080081A76E /* Products */,
 				ED1892E4FD428261310F45D2 /* Pods */,
@@ -106,16 +93,9 @@
 				0A47048525FB41090081A76E /* Assets.xcassets */,
 				0A47048725FB41090081A76E /* LaunchScreen.storyboard */,
 				0A47048A25FB41090081A76E /* Info.plist */,
+				77500A7026BAC13E005469F7 /* NimbblCheckoutSDK.framework */,
 			);
 			path = PaymentApp;
-			sourceTree = "<group>";
-		};
-		0A937480269DC4FA00D1843A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0A937484269DC4FA00D1843A /* NimbblCheckoutSDK.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		ED1892E4FD428261310F45D2 /* Pods */ = {
@@ -175,28 +155,12 @@
 			mainGroup = 0A47047025FB41080081A76E;
 			productRefGroup = 0A47047A25FB41080081A76E /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0A937480269DC4FA00D1843A /* Products */;
-					ProjectRef = 0A93747F269DC4FA00D1843A /* NimbblCheckoutSDK.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0A47047825FB41080081A76E /* PaymentApp */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0A937484269DC4FA00D1843A /* NimbblCheckoutSDK.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = NimbblCheckoutSDK.framework;
-			remoteRef = 0A937483269DC4FA00D1843A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0A47047725FB41080081A76E /* Resources */ = {
