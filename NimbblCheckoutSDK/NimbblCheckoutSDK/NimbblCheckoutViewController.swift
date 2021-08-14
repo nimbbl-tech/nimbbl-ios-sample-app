@@ -155,7 +155,7 @@ final class NimbblCheckoutViewController: UIViewController {
         
         let accessKey = props["accessKey"] as? String ?? ""
         
-        let postData = ["access_key":accessKey,"domain_name":"demo.nimbbl.tech"]
+        let postData = ["access_key":accessKey,"domain_name":"iossdk.nimbbl.tech"]
         
         sendRequest(requestUrl: "\(serviceUrl)verify-access-key", requestType: "POST", requestData: postData){ result in
             switch result {
