@@ -48,7 +48,7 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
     
     
     fileprivate func openPaymentScreen(orderId: String) {
-        let options = ["orderID": orderId]
+        let options = ["order_id": orderId]
         nimbblChekout.show(options: options, displayController: self)
     }
     

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/NimbblCheckoutSDK-Swift.h</key>
 		<data>
-		CzeoaGyuKimCjPkXKorjBzIIF80=
+		454MtMHI61Qb9692KYC0FZ8QT3k=
 		</data>
 		<key>Headers/NimbblCheckoutSDK.h</key>
 		<data>
@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1iev1o0h5uqOwRYIapgzqNwa4zo=
+		KR0Lh1L9ttpQ04mo07FkuxF/jU8=
 		</data>
 		<key>Modules/NimbblCheckoutSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		UzIZW7oVNbDrFYm4jenlB/rfE/s=
+		jFJ2/yI00NWUZpfLiwlOqaajBCU=
 		</data>
 		<key>Modules/NimbblCheckoutSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		UzIZW7oVNbDrFYm4jenlB/rfE/s=
+		jFJ2/yI00NWUZpfLiwlOqaajBCU=
 		</data>
 		<key>Modules/NimbblCheckoutSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Nzjk1NzQAWhWy1ui3YxDfIXdP0I=
+		pFHSTCYzLutSr4jb1+ryHnYHFz0=
 		</data>
 		<key>Modules/NimbblCheckoutSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rKUBz5ITsLmOSxFFdguPFFzQRbo=
+		5zoitUmKpuN+jIBS6H4XrAS4CxY=
 		</data>
 		<key>Modules/NimbblCheckoutSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		Nzjk1NzQAWhWy1ui3YxDfIXdP0I=
+		pFHSTCYzLutSr4jb1+ryHnYHFz0=
 		</data>
 		<key>Modules/NimbblCheckoutSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		rKUBz5ITsLmOSxFFdguPFFzQRbo=
+		5zoitUmKpuN+jIBS6H4XrAS4CxY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gDtZvQ/va1kq+vg25Tjxcy46J2Wyzz4igHllMPvgCws=
+			rGHlIGZDFWSu1ZmeajZiEDYqoXjwvMo/hmwffJNesrQ=
 			</data>
 		</dict>
 		<key>Headers/NimbblCheckoutSDK.h</key>
@@ -65,42 +65,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OI7+WiT9knJx8qv94EXVoM2TkZgZSa53X3gXnx/GOkk=
+			iKfSEdLyc51JriFmpi//fcKZ6NmtVwqBww+8qt+TK0k=
 			</data>
 		</dict>
 		<key>Modules/NimbblCheckoutSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OI7+WiT9knJx8qv94EXVoM2TkZgZSa53X3gXnx/GOkk=
+			iKfSEdLyc51JriFmpi//fcKZ6NmtVwqBww+8qt+TK0k=
 			</data>
 		</dict>
 		<key>Modules/NimbblCheckoutSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D66Ff/vGOQOcPIejgzYzRNnCtkOhZSHgtfCc1coOUuA=
+			kUeBS3618CR4Fdysk3AIFqyTsjmOF4n8zQ5PwE1OoaM=
 			</data>
 		</dict>
 		<key>Modules/NimbblCheckoutSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FAsoGKZHT4kmGZgW9EeWqGiXWXc0BUiKcAvOqv6hRF0=
+			W9RD+au8bHgfMadihrKAHEQ4qdOpI7Pc95TG5vo1Ah8=
 			</data>
 		</dict>
 		<key>Modules/NimbblCheckoutSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D66Ff/vGOQOcPIejgzYzRNnCtkOhZSHgtfCc1coOUuA=
+			kUeBS3618CR4Fdysk3AIFqyTsjmOF4n8zQ5PwE1OoaM=
 			</data>
 		</dict>
 		<key>Modules/NimbblCheckoutSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FAsoGKZHT4kmGZgW9EeWqGiXWXc0BUiKcAvOqv6hRF0=
+			W9RD+au8bHgfMadihrKAHEQ4qdOpI7Pc95TG5vo1Ah8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
