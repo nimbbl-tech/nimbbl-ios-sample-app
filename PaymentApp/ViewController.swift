@@ -47,8 +47,8 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
     }
     
     
-    fileprivate func openPaymentScreen(orderId: String) {
-        let options = ["order_id": orderId]
+    fileprivate func openPaymentScreen(orderId: String, amount: Double, merchantId: Int) {
+        let options: [String : Any] = ["order_id": orderId, "amount" : amount, "merchant_id" : merchantId]
         nimbblChekout.show(options: options, displayController: self)
     }
     
@@ -83,9 +83,12 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
                     guard let item = result["item"] as? JSONObject else { return }
                     guard let orderId = item["order_id"] as? String else { return }
                     
+                    let amount = item["total_amount"] as! Double
+                    let merchantId = item["sub_merchant_id"] as! Int
+                    
                     DispatchQueue.main.async {
                         hud.hide(animated: true)
-                        self.openPaymentScreen(orderId: orderId)
+                        self.openPaymentScreen(orderId: orderId, amount: amount, merchantId: merchantId)
                     }
                 }
             }
