@@ -22,8 +22,9 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        nimbblChekout = NimbblCheckout(accessKey: "<access_key>", delegate: self)
+        // access_key_1MwvMkKkweorz0ry
+        nimbblChekout = NimbblCheckout(accessKey: "access_key_1MwvMkKkweorz0ry", delegate: self)
+        nimbblChekout.enableUATEnvironment = false
         
         for i in 1...2{
             
@@ -43,7 +44,7 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
     
     
     fileprivate func openPaymentScreen(orderId: String) {
-        let options = ["orderID": orderId]
+        let options = ["order_id": orderId]
         nimbblChekout.show(options: options, displayController: self)
     }
     
