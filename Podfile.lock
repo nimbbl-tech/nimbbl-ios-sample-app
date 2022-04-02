@@ -1,24 +1,33 @@
 PODS:
   - Analytics (4.1.6)
   - MBProgressHUD (1.2.0)
-  - Nimbbl-SDK (1.0.7):
+  - Nimbbl-SDK (1.0.9):
     - Analytics
 
 DEPENDENCIES:
   - MBProgressHUD
-  - Nimbbl-SDK
+  - Nimbbl-SDK (from `https://github.com/nimbbl-tech/nimbbl-ios-sdk.git`, tag `1.0.9`)
 
 SPEC REPOS:
   trunk:
     - Analytics
     - MBProgressHUD
-    - Nimbbl-SDK
+
+EXTERNAL SOURCES:
+  Nimbbl-SDK:
+    :git: https://github.com/nimbbl-tech/nimbbl-ios-sdk.git
+    :tag: 1.0.9
+
+CHECKOUT OPTIONS:
+  Nimbbl-SDK:
+    :git: https://github.com/nimbbl-tech/nimbbl-ios-sdk.git
+    :tag: 1.0.9
 
 SPEC CHECKSUMS:
   Analytics: eefe524436f904b8bb3f8c8c3425280e43b34efc
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  Nimbbl-SDK: a3c0e3e0b563bec50822220e726e464907b53b35
+  Nimbbl-SDK: a794c209d46606bcb5cc801a61aef0fe50fcc850
 
-PODFILE CHECKSUM: f86f2a104508c7f462ebdab1a7a4d1eed39edfc4
+PODFILE CHECKSUM: 394be03d9198b5ed6145f89280d34bd826dd9fc8
 
 COCOAPODS: 1.11.2

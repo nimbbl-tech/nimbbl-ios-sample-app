@@ -6,6 +6,6 @@ target 'PaymentApp' do
   use_frameworks!
 
   # Pods for PaymentApp
-  pod 'Nimbbl-SDK'
+  pod 'Nimbbl-SDK', :git => 'https://github.com/nimbbl-tech/nimbbl-ios-sdk.git', :tag => '1.0.9'
   pod 'MBProgressHUD'
 end
