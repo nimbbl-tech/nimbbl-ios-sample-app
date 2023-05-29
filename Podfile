@@ -7,6 +7,6 @@ target 'PaymentApp' do
 
   # Pods for PaymentApp
 
-pod 'Nimbbl-SDK' #, '~> 1.0.1'
+pod 'Nimbbl_SDK', :git => 'https://github.com/BushraLogicLoop/Nimbbl_SDK.git', :tag => '1.0.10'
 pod 'MBProgressHUD'
 end

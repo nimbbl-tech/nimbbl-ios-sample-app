@@ -6,7 +6,8 @@
 //
 
 import UIKit
-import NimbblCheckoutSDK
+import Nimbbl_SDK
+//import NimbblCheckoutSDK
 import MBProgressHUD
 
 typealias JSONObject = Dictionary<String,Any>
@@ -23,8 +24,8 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        nimbblChekout = NimbblCheckout(accessKey: "<access_key>", delegate: self)
-        
+      //  nimbblChekout = NimbblCheckout(accessKey: "<access_key>", delegate: self)
+        nimbblChekout = NimbblCheckout(accessKey: "<access_key>", serviceURL: "<serviceURL>", paymentURL: "<paymentURL>", delegate: self)
         for i in 1...2{
             
             let title = i == 1 ? "Colourful Mandalas" : "Designer Triangles."
@@ -54,7 +55,7 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
         hud.mode = .indeterminate
         
         let product = arrProducts[sender.tag]
-        let parameters = "{ \"product_id\": \(product.productId) }"
+        let parameters = "{ \"product_id\":\(product.productId) }"
         let postData = parameters.data(using: .utf8)
 
         var request = URLRequest(url: URL(string: "https://shop.nimbbl.tech/api/orders/create")!)
