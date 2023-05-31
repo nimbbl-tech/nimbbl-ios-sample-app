@@ -3,100 +3,339 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		14D3D471ABDA194DF196019ACF3E579C /* Nimbbl-SDK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = AED8EBD74402F85A46D07B3280B88AC4 /* Build configuration list for PBXAggregateTarget "Nimbbl-SDK" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = "Nimbbl-SDK";
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		11519D6F7D100CF6E2682E014EB928EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
-		70EE1C774C978E1876AE6CA1224E897D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EE59689F3324375E07AEE2A7A3F86C /* MBProgressHUD.m */; };
-		7596519E375DA27F6E7D05D440757055 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABB98090B02C131F86931CB9BE54B7A /* CoreGraphics.framework */; };
-		81B9E2F21B1EF9FE4E769103108DEA8A /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2481AE227216383B73BD9ED9F3601D0A /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		935848C3C4D79D1CBBA6B9AD1310559C /* Pods-PaymentApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 782519724E9C8C6D92063A9F6B7581B8 /* Pods-PaymentApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC1B5B34F7456E723EC031A496585471 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
-		DABF20F73D27572CD97071A6D4DB9004 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF0E53EFD1108457423280B087C3D36 /* MBProgressHUD-dummy.m */; };
-		EB2A4C29BE958CCB03B3FD9FAB927F1F /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 5226BC585F35CC12ED42E50A276224ED /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F612969E69DE5F072AD96720641B1184 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51AB40693B18F443F75126966ED13E47 /* QuartzCore.framework */; };
-		F853129DE931528829B480A8A130DC8D /* Pods-PaymentApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D401DD0C08544B908AB42A954D32A05F /* Pods-PaymentApp-dummy.m */; };
+		0097064E7F7D3F413161738CC5C25EEC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5225DD39F274A8C4BA2D7BDACDA8DCA5 /* MBProgressHUD.m */; };
+		03CECEE22D8E1E49F65B13C57E17ED50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
+		0870A0F465D8E0FA34031BB0DB2E86D2 /* Pods-PaymentApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 782519724E9C8C6D92063A9F6B7581B8 /* Pods-PaymentApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A43C46F296C13246F66DED267B66149 /* NSData+SEGGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 458FFBB4BF10CD0ADDE915EFEC1220A6 /* NSData+SEGGZIP.m */; };
+		0AA33EBB857A5205F87C09CCB99EAC74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
+		0D66936A8F524646E62755CAF117F98F /* SEGMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B9EF90F564498A31A8FE34EA92DB20 /* SEGMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12A5DB6B55FD8432DC4FCD2A5CD1ACD2 /* SEGSegmentIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F71B77548ECFF5CCB32FA17E1C4D06 /* SEGSegmentIntegration.m */; };
+		17A2B46B5710553AC3B357E082C8D1A7 /* SEGContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 68417A09710A9D233E19FBF7E6CD3496 /* SEGContext.m */; };
+		188BC6A856F53497BBDBD32B7CB98EC1 /* SEGIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 279143DDDA41C2D8051ACDEDDC12FF54 /* SEGIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		206678F0A741D642CA934AE40B47F82C /* dropdown_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CD7E8AE2DD4990F6310C0B611C86B06 /* dropdown_icon.png */; };
+		233849E7247678C8D08019E67C118B57 /* SEGState.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DAFDC116A0CB78D6571DB86E8BBF1AB /* SEGState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		241E6C7F5CBF36D4855CA4FB68D794EE /* rhomboid.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2EB835260F500AAA5D558A8030FC4989 /* rhomboid.jpeg */; };
+		273D25A2A9F3F602D9CBD0359512B4C2 /* Nimbbl_SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A39033C8B02F519216D4FA3C467F623E /* Nimbbl_SDK-dummy.m */; };
+		2A1C5D8D777D5AFF9BCEC8EC3D411CA7 /* SEGMiddleware.h in Headers */ = {isa = PBXBuildFile; fileRef = 050F4C339AED2B313EF3234694CA6400 /* SEGMiddleware.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B1EF9F938A82FDD6FE44792DBE27FE0 /* SEGTrackPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD16D52B4F45E2F4728C54F04B182BE /* SEGTrackPayload.m */; };
+		2B60271DFC4B92181CFBAFB8C42EB18B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
+		31B3F82B0183E280D3D11664CD5ED456 /* SEGAliasPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DC19CD7DA031F29F17EF0AFA6FA8F3 /* SEGAliasPayload.m */; };
+		320FE5C08207B115B6E98D4CE09381DD /* SEGSegmentIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = E2124CB750226BDB1EE4EAADB9F9263B /* SEGSegmentIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
+		36204C6E3833C361DC25A78BE407CFFA /* SEGContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 041174BC190B843A74780D126A6F08F5 /* SEGContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39F7A5121334D7A9996A148E4ECDE8AC /* SEGMiddleware.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8AC9B25362324AD722AA9A6F773DC3 /* SEGMiddleware.m */; };
+		3AB503D076E809F546D53CA1B0B2B9EB /* SEGAES256Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F46C2D2B26DF714D40CA5B1FC1CAB22 /* SEGAES256Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCFE6AA09821263964112C456248DC5 /* SEGState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7E1B62887D107B8706249A425B559C /* SEGState.m */; };
+		3EFCD773E3C83EBD7D056CAE92E0B173 /* SEGIdentifyPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8D5BAF06DCF8A7FD7490D936D90D9F /* SEGIdentifyPayload.m */; };
+		436C18C3ABB3D6A52A91AC93DD5DDBF0 /* SEGSegmentIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EC455F89C91CC2AA6F7DD6ED9C4936A /* SEGSegmentIntegrationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		486BD878A6185651850D19FE0A855E54 /* SEGHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 190C833DEC20B54009995FEE00D7AD30 /* SEGHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6059AC646F03C7C909D4BF250E1B931 /* DropDown+Appearance.swift */; };
+		52AC7272006789E5B32F5AFAE4ABD6A0 /* SEGAnalyticsConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E538943321BE3278BDE2F1785A37DD2D /* SEGAnalyticsConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		557DEBE4CCD20864381A8DB339AF20A8 /* SEGReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1655E7027B09410A017A7C44E77546 /* SEGReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		559868601F3A25B77CD8E5FCFFA830B9 /* SEGTrackPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 3515DF00823DEDCB99F0C0AC28B419A0 /* SEGTrackPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5895AF1F10A4AC8238F553D69DBD2F26 /* NimbblCheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F4E418D29C9A448F5B608E9C168F46 /* NimbblCheckoutVC.swift */; };
+		58C91B4AB36E6B16421106CA634C58EF /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D50010F3FF41EE57655B667E0B6D1FAE /* MBProgressHUD-dummy.m */; };
+		5BAC1EF86D0E57E44E404B2796993561 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9032AA96C6CB379DA181CAA29BA1C15E /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C49372E6A8309E368DA7950BB369395 /* Pods-PaymentApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D401DD0C08544B908AB42A954D32A05F /* Pods-PaymentApp-dummy.m */; };
+		5EB50504C7B7A2B5CB9F36D3E02CA467 /* Nimbbl_SDK-Nimbbl_SDK in Resources */ = {isa = PBXBuildFile; fileRef = 10541F2B9D53DC671D43158DF3BF932D /* Nimbbl_SDK-Nimbbl_SDK */; };
+		67E941CADB3CDDEEDF8CE4EE4A4A05BB /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A457F2D878D80CDF91CE6648A740CB8 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC16E683A545EB82843398FD5CDDBC94 /* DropDownCell.xib */; };
+		696482E99269E8CDB0500799BBCE6449 /* Analytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C56FEF2FB368A896B76A51B9242C5F8A /* Analytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B74A1ED08897C734ED76B37803D3CE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */; };
+		6C15EB240AF9CD8016D266AA7C9DAE6C /* SEGFileStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CA7C836208E489E8675DC80BB82AE4C /* SEGFileStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71B2EE32B16BB71EB3B48EFDB2D2C3F7 /* SEGAliasPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0E95D6771BEC8F4BBC6E3D595F1571 /* SEGAliasPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B3BF4836B6BB6538DE533A4C93FC3 /* DPDConstants.swift */; };
+		7459C4D5936B411B548372351C1C4029 /* SEGStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 93EC97FB0A606FAB26489D9A8D271FDC /* SEGStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AAAEC37C5B639E2898A04673ACAAD3F /* mandalas.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DACC4ECB592271F5A68F48CE83F79A98 /* mandalas.jpeg */; };
+		7C5CC019B581871B3A8F985B81EF24D5 /* SEGReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E5F5A6F301344BB1610EB7E750CA /* SEGReachability.m */; };
+		7D2B6FEB7994AD7BE07AF9ACF5A9505E /* SEGIntegrationsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2A466FFAFFE801245A468CEEEA4E6E /* SEGIntegrationsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D5C076A4746677A37F564C78018E0DA /* SEGPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEA333CE7F62B88A54F11D201E9DFE8 /* SEGPayload.m */; };
+		7E9F722518766C1F441FE1210DECC4EF /* Nimbbl_SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D1353F31E1DFC060158ED2F0F5A0356 /* Nimbbl_SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514E598077F229903D9DF5EAAB58DDC5 /* DropDown.swift */; };
+		860EC0A5D4E5DE26C3FC5BA1B64BAFA8 /* SEGUserDefaultsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D827D27A719243B6A40717ACAB477678 /* SEGUserDefaultsStorage.m */; };
+		89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CACBACA77A3FB1C467F68408FAFBC5 /* DPDKeyboardListener.swift */; };
+		89D257FA9D2CD19B84D6D32EC19B7628 /* SEGHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF3C311DC0F4846650378DE314983B /* SEGHTTPClient.m */; };
+		8C041E2C23D6ACADF2EE2C5BEC52CC55 /* SEGAnalyticsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D044AF13F3A267CA825D4AE1D2E1160 /* SEGAnalyticsUtils.m */; };
+		8C0EEA8F56098154A880D893217F9840 /* SEGAES256Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 517CA5FB374CE81A5DDA2D5EF743E3C7 /* SEGAES256Crypto.m */; };
+		907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FD46436CE583DC6A2EE09DD599E4F /* DropDown-dummy.m */; };
+		91FC06B3714F103E9192A6F68B15C6D3 /* NSData+SEGGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = EFE68179385A77859C3790444994CB8A /* NSData+SEGGZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		933E8D19F4112CDB3FF768CC633F818B /* SEGCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6063E9EA073155C398BE0A28FCB4FC /* SEGCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		977382C0F7359E7BE08753FF6D96EAB9 /* SEGSerializableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E582C912CC9F0ACDE849423268A9611 /* SEGSerializableValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CE5AE2FB94BAD317BA572E0E77D6A05 /* SEGAnalyticsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 759A1E8B64F7B27AB6F372EBACDE413B /* SEGAnalyticsConfiguration.m */; };
+		A0450A08E026AD13C29F3B42E1B0C7E6 /* Segment.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C67E4E9EAF453A88BCC63E22B02CE8B /* Segment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6FC39F9419F15E470434B9A4493A261 /* SEGScreenPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = A69CEFDE27A891F607DB7C12B5E51C62 /* SEGScreenPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A98268D73144D9B64DB82E9C5CD362AD /* SEGUserDefaultsStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FBB976F50545602ACD184923674759 /* SEGUserDefaultsStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC2BB0E786ED3585E7457985E8C9C92F /* SEGSegmentIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 089D6EA470D7D44C294825028D6FD0DE /* SEGSegmentIntegrationFactory.m */; };
+		AD1EF9ED5EF7C111B42B8D0DACB3DADD /* UIViewController+SEGScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C21495255235337627188E6EB2E7F8CB /* UIViewController+SEGScreen.m */; };
+		AD948BE8E64B07B2A2F94D660C4C82DC /* SEGAnalyticsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 87ED34AF5AC1516D798C266DE7D04C0C /* SEGAnalyticsUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFAC1D4EBD53A048346210536741DF13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABB98090B02C131F86931CB9BE54B7A /* CoreGraphics.framework */; };
+		B30E2A2E2B816303880718FC3CF2A3FA /* SEGIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ABD5827B81C7DA079F151545BF575AC /* SEGIntegrationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B41B7CA65465FD40292222CBB4387589 /* SEGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CDB1C64F9BBD4FD9C4519F2ED3920D /* SEGUtils.m */; };
+		B45E14C48D7529A682DC0E250B8B2DAD /* NSViewController+SEGScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1022C1831282901A3BFCCEE8CB03B419 /* NSViewController+SEGScreen.m */; };
+		B52177FF72FDAC3EDB7195DE98F5501E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51AB40693B18F443F75126966ED13E47 /* QuartzCore.framework */; };
+		B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57607DDF6EF56237FE9AC31F2FD0979E /* DPDUIView+Extension.swift */; };
+		BD40B43498BB7B136A0CB0D66714CD80 /* SEGGroupPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 497841F675B755F87F4E061496B21A84 /* SEGGroupPayload.m */; };
+		BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579728AC25483BAC852F3F641560D51 /* DropDownCell.swift */; };
+		C43E523441207FCA51B655C1EBE61AA1 /* SEGFileStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5AA0C7FE8ADD0C743C72E228EDD8DA /* SEGFileStorage.m */; };
+		C7C07A0ACC33F28B0941BEEA01049CB9 /* SEGScreenPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BED48C831A5AC1F559975AC1EF21F5 /* SEGScreenPayload.m */; };
+		CC83DEB29EE23239AB0C219054E1F5DE /* SEGStoreKitTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A6782F6AC48971D42279FA9ADF929B8 /* SEGStoreKitTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D12FFE6A85B5F33032CF7A0E5E0B38EC /* Analytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3328A006252EFE84488BD0506163EF2 /* Analytics-dummy.m */; };
+		D46BEBE7D76C095DA757891E51CBE4DC /* SEGAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B6D1E967317A33F6FD45F072C9DC3A /* SEGAnalytics.m */; };
+		DA418C3CD9199C93A7213AED57B6CFEA /* SEGAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = D6143C92F1A8A62A5848EAE673F7EA03 /* SEGAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF130B86CF3EC0670CDC46E6EBF9CF7B /* SEGPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = B05F737879D5C6E674F3B4CE1E4EF2A3 /* SEGPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB3BE2FCB8EF20FD067715C1BE1ABEE6 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E210A24CB9C0CBA8F67D3B445619AAAF /* SEGWebhookIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C924F7B111739F1DD3209AFA073DB07 /* SEGWebhookIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8F4C396C82107C84CD2BC08A6F29D0B /* SEGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 80CE6AE218D27196F9CDBC85A65DBE4C /* SEGUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA29DF308095E0DA82A77CB9C00852AE /* SEGWebhookIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 59972A40AC76E8C97938F43189E4655C /* SEGWebhookIntegration.m */; };
+		EC8A5632EB1726B2A002A4DCFB358577 /* NSViewController+SEGScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = D110E03A9871F83A55F7BD9768B0A4A9 /* NSViewController+SEGScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC8EB7F1686CA218646849333EC81E38 /* SEGScreenReporting.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C06DC082C935900C2C76A02F0814641 /* SEGScreenReporting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE1F199A3BDE7A7D7DE2E39E655173FF /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 064D9CBFD9263604CCC5C66FFCF3402C /* setting.png */; };
+		EFA3349CA5229101281160A984AD2A30 /* SEGIdentifyPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A4346FE533ADBC5A17D023A45FD7F9C /* SEGIdentifyPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F05906C96830D2FC446CF41928E1E4EF /* NimbblUpiSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC7349B35098E2002C82A87A1AA9FC4 /* NimbblUpiSupport.swift */; };
+		F73144C3DF66F22DA7CA846601BD3AAE /* SEGStoreKitTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F753124FB0370CF0E3309C8F69C7D /* SEGStoreKitTracker.m */; };
+		FB1F2CF0EC25B86AE8955D60BB7BA9B6 /* SEGIntegrationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 520D80FBED99360D01D2D671B3E626AA /* SEGIntegrationsManager.m */; };
+		FD1E0EC0F9D19270E064069288DF805F /* NimbblCheckout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF80A3AD802619DE3062FE031C66A3A4 /* NimbblCheckout.swift */; };
+		FD47E3FBF25FAEB299E1182C5EC419F8 /* UIViewController+SEGScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6958A236F31F5AD87AAC3819A3BB69 /* UIViewController+SEGScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEA67B1EE1DFCC8C2D02902FD242CB4E /* SEGGroupPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = A3DB7D87FA14CB8153197D409C76036A /* SEGGroupPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2D560224C78DE981B2229B57AED897F7 /* PBXContainerItemProxy */ = {
+		1E5D08410CDF1B0B61DF6CA5DA9A2BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F50A15C556FFEAD343B69C7EA54092F;
+			remoteInfo = Analytics;
+		};
+		29A327B81A266EC336B5249978CBEBA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17681F27556D8490F9D602A807EA1FA2;
+			remoteInfo = "Nimbbl_SDK-Nimbbl_SDK";
+		};
+		433CBCCCB5F2AA5CE5495C332614BFC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D4AE04D86B7D958A55241094FA2232;
+			remoteInfo = Nimbbl_SDK;
+		};
+		48D40EDFC07DFA67E6A3A7D7C72FB75E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
+		519832E74C21A13965A35AB4A6EBBE3F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
 			remoteInfo = MBProgressHUD;
 		};
-		CAD1876906E65A1AABB0C03E57326C0D /* PBXContainerItemProxy */ = {
+		55EA74D308C47EB8267D00A1CFDA24C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 14D3D471ABDA194DF196019ACF3E579C;
-			remoteInfo = "Nimbbl-SDK";
+			remoteGlobalIDString = 8F50A15C556FFEAD343B69C7EA54092F;
+			remoteInfo = Analytics;
+		};
+		76E37B0DA8B7AB89FB653EA6CE11A733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
+			remoteInfo = MBProgressHUD;
+		};
+		9343C75121D8140929EEE16584FA0A1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041174BC190B843A74780D126A6F08F5 /* SEGContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGContext.h; path = Segment/Classes/SEGContext.h; sourceTree = "<group>"; };
+		050F4C339AED2B313EF3234694CA6400 /* SEGMiddleware.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGMiddleware.h; path = Segment/Classes/SEGMiddleware.h; sourceTree = "<group>"; };
+		064D9CBFD9263604CCC5C66FFCF3402C /* setting.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = setting.png; path = Nimbbl_SDK/Assets/setting.png; sourceTree = "<group>"; };
+		089D6EA470D7D44C294825028D6FD0DE /* SEGSegmentIntegrationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGSegmentIntegrationFactory.m; path = Segment/Classes/SEGSegmentIntegrationFactory.m; sourceTree = "<group>"; };
+		0B062E3CD7A01015989198F5EA4C3ED6 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		1022C1831282901A3BFCCEE8CB03B419 /* NSViewController+SEGScreen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSViewController+SEGScreen.m"; path = "Segment/Internal/NSViewController+SEGScreen.m"; sourceTree = "<group>"; };
+		10541F2B9D53DC671D43158DF3BF932D /* Nimbbl_SDK-Nimbbl_SDK */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Nimbbl_SDK-Nimbbl_SDK"; path = Nimbbl_SDK.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		14CA429683EA840DED6765C3C34163CA /* Pods-PaymentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaymentApp.debug.xcconfig"; sourceTree = "<group>"; };
-		2211A8E5CF25535A4FB8CDF5F0355832 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
-		2481AE227216383B73BD9ED9F3601D0A /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		28FF67071E3CE2C5754DF6BEB10353CB /* NimbblCheckoutSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NimbblCheckoutSDK.h; path = NimbblCheckoutSDK.framework/Headers/NimbblCheckoutSDK.h; sourceTree = "<group>"; };
+		15F7CD423D55966FBF8EE4F49A839926 /* Analytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Analytics-prefix.pch"; sourceTree = "<group>"; };
+		190C833DEC20B54009995FEE00D7AD30 /* SEGHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGHTTPClient.h; path = Segment/Classes/SEGHTTPClient.h; sourceTree = "<group>"; };
+		1A6782F6AC48971D42279FA9ADF929B8 /* SEGStoreKitTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGStoreKitTracker.h; path = Segment/Internal/SEGStoreKitTracker.h; sourceTree = "<group>"; };
+		1ABD5827B81C7DA079F151545BF575AC /* SEGIntegrationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGIntegrationFactory.h; path = Segment/Classes/SEGIntegrationFactory.h; sourceTree = "<group>"; };
+		1BCF3C311DC0F4846650378DE314983B /* SEGHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGHTTPClient.m; path = Segment/Classes/SEGHTTPClient.m; sourceTree = "<group>"; };
+		1C924F7B111739F1DD3209AFA073DB07 /* SEGWebhookIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGWebhookIntegration.h; path = Segment/Classes/SEGWebhookIntegration.h; sourceTree = "<group>"; };
+		1CD7E8AE2DD4990F6310C0B611C86B06 /* dropdown_icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dropdown_icon.png; path = Nimbbl_SDK/Assets/dropdown_icon.png; sourceTree = "<group>"; };
+		23F71B77548ECFF5CCB32FA17E1C4D06 /* SEGSegmentIntegration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGSegmentIntegration.m; path = Segment/Classes/SEGSegmentIntegration.m; sourceTree = "<group>"; };
+		279143DDDA41C2D8051ACDEDDC12FF54 /* SEGIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGIntegration.h; path = Segment/Classes/SEGIntegration.h; sourceTree = "<group>"; };
+		2C5AA0C7FE8ADD0C743C72E228EDD8DA /* SEGFileStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGFileStorage.m; path = Segment/Internal/SEGFileStorage.m; sourceTree = "<group>"; };
+		2CE4B6165F426953A26419DF02AF0D93 /* Analytics */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Analytics; path = Segment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE6B9F8E7CFB30528C3B73629D1AAB6 /* Pods-PaymentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaymentApp.release.xcconfig"; sourceTree = "<group>"; };
+		2CF51679AB64F29F40D506EAD1238029 /* Nimbbl_SDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Nimbbl_SDK; path = Nimbbl_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EB835260F500AAA5D558A8030FC4989 /* rhomboid.jpeg */ = {isa = PBXFileReference; includeInIndex = 1; name = rhomboid.jpeg; path = Nimbbl_SDK/Assets/rhomboid.jpeg; sourceTree = "<group>"; };
 		2F281F168A66A545AEDADDA6CC3D1547 /* Pods-PaymentApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaymentApp-frameworks.sh"; sourceTree = "<group>"; };
 		317AD09D4905C5BBFEC580FE38FA17AA /* Pods-PaymentApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PaymentApp.modulemap"; sourceTree = "<group>"; };
+		341FD46436CE583DC6A2EE09DD599E4F /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		3515DF00823DEDCB99F0C0AC28B419A0 /* SEGTrackPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGTrackPayload.h; path = Segment/Classes/SEGTrackPayload.h; sourceTree = "<group>"; };
 		35D5D890C15A7712160EF90FE5427C98 /* Pods-PaymentApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaymentApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		3824991AF0DFD59676FC673CDD1E6D9A /* NimbblCheckoutSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NimbblCheckoutSDK.framework; sourceTree = "<group>"; };
+		3A457F2D878D80CDF91CE6648A740CB8 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		3D044AF13F3A267CA825D4AE1D2E1160 /* SEGAnalyticsUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAnalyticsUtils.m; path = Segment/Classes/SEGAnalyticsUtils.m; sourceTree = "<group>"; };
+		3EC455F89C91CC2AA6F7DD6ED9C4936A /* SEGSegmentIntegrationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGSegmentIntegrationFactory.h; path = Segment/Classes/SEGSegmentIntegrationFactory.h; sourceTree = "<group>"; };
+		43C40DA88B71353C827D1A5EC0C0F77E /* Nimbbl_SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimbbl_SDK.debug.xcconfig; sourceTree = "<group>"; };
+		458FFBB4BF10CD0ADDE915EFEC1220A6 /* NSData+SEGGZIP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+SEGGZIP.m"; path = "Segment/Internal/NSData+SEGGZIP.m"; sourceTree = "<group>"; };
+		45FBB976F50545602ACD184923674759 /* SEGUserDefaultsStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGUserDefaultsStorage.h; path = Segment/Internal/SEGUserDefaultsStorage.h; sourceTree = "<group>"; };
+		48B6D1E967317A33F6FD45F072C9DC3A /* SEGAnalytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAnalytics.m; path = Segment/Classes/SEGAnalytics.m; sourceTree = "<group>"; };
+		497841F675B755F87F4E061496B21A84 /* SEGGroupPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGGroupPayload.m; path = Segment/Classes/SEGGroupPayload.m; sourceTree = "<group>"; };
 		4CD50A5A0382D7D1702F93FDF05C8FF6 /* Pods-PaymentApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaymentApp-Info.plist"; sourceTree = "<group>"; };
+		4D96EDDFDB7FACD5DA5D1A0D40AA70B3 /* Analytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Analytics.debug.xcconfig; sourceTree = "<group>"; };
+		500512437FBAF699C1A9D2BFB6742C56 /* Analytics-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Analytics-Info.plist"; sourceTree = "<group>"; };
+		514E598077F229903D9DF5EAAB58DDC5 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		517CA5FB374CE81A5DDA2D5EF743E3C7 /* SEGAES256Crypto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAES256Crypto.m; path = Segment/Internal/SEGAES256Crypto.m; sourceTree = "<group>"; };
 		51AB40693B18F443F75126966ED13E47 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		5226BC585F35CC12ED42E50A276224ED /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		5AC05694B540E48ED860426D1BE559B5 /* MBProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.release.xcconfig; sourceTree = "<group>"; };
-		5BF0E53EFD1108457423280B087C3D36 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		520D80FBED99360D01D2D671B3E626AA /* SEGIntegrationsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGIntegrationsManager.m; path = Segment/Internal/SEGIntegrationsManager.m; sourceTree = "<group>"; };
+		5225DD39F274A8C4BA2D7BDACDA8DCA5 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		57607DDF6EF56237FE9AC31F2FD0979E /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		583080B130840E5AFD9D15028CC8AF38 /* Nimbbl_SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimbbl_SDK.release.xcconfig; sourceTree = "<group>"; };
+		59972A40AC76E8C97938F43189E4655C /* SEGWebhookIntegration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGWebhookIntegration.m; path = Segment/Classes/SEGWebhookIntegration.m; sourceTree = "<group>"; };
+		5C2B3BF4836B6BB6538DE533A4C93FC3 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		65DC19CD7DA031F29F17EF0AFA6FA8F3 /* SEGAliasPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAliasPayload.m; path = Segment/Classes/SEGAliasPayload.m; sourceTree = "<group>"; };
+		68417A09710A9D233E19FBF7E6CD3496 /* SEGContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGContext.m; path = Segment/Classes/SEGContext.m; sourceTree = "<group>"; };
+		6A4346FE533ADBC5A17D023A45FD7F9C /* SEGIdentifyPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGIdentifyPayload.h; path = Segment/Classes/SEGIdentifyPayload.h; sourceTree = "<group>"; };
+		6C67E4E9EAF453A88BCC63E22B02CE8B /* Segment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Segment.h; path = Segment/Classes/Segment.h; sourceTree = "<group>"; };
+		6D1353F31E1DFC060158ED2F0F5A0356 /* Nimbbl_SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimbbl_SDK-umbrella.h"; sourceTree = "<group>"; };
+		6D7E1B62887D107B8706249A425B559C /* SEGState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGState.m; path = Segment/Internal/SEGState.m; sourceTree = "<group>"; };
+		6F6C83AE17424FB5F8340A4F91FFB3D0 /* Analytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Analytics.modulemap; sourceTree = "<group>"; };
+		7212947BDD4976F6245C869543D6A5CB /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		73BEF2D4EC3E1FE710FBB646E1E80013 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		74BED48C831A5AC1F559975AC1EF21F5 /* SEGScreenPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGScreenPayload.m; path = Segment/Classes/SEGScreenPayload.m; sourceTree = "<group>"; };
+		759A1E8B64F7B27AB6F372EBACDE413B /* SEGAnalyticsConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAnalyticsConfiguration.m; path = Segment/Classes/SEGAnalyticsConfiguration.m; sourceTree = "<group>"; };
 		782519724E9C8C6D92063A9F6B7581B8 /* Pods-PaymentApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaymentApp-umbrella.h"; sourceTree = "<group>"; };
-		80210470EA71C3BF600EE848C856A7AB /* Pods_PaymentApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PaymentApp.framework; path = "Pods-PaymentApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78CDB1C64F9BBD4FD9C4519F2ED3920D /* SEGUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGUtils.m; path = Segment/Internal/SEGUtils.m; sourceTree = "<group>"; };
+		7C06DC082C935900C2C76A02F0814641 /* SEGScreenReporting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGScreenReporting.h; path = Segment/Classes/SEGScreenReporting.h; sourceTree = "<group>"; };
+		7F46C2D2B26DF714D40CA5B1FC1CAB22 /* SEGAES256Crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAES256Crypto.h; path = Segment/Internal/SEGAES256Crypto.h; sourceTree = "<group>"; };
+		7F6958A236F31F5AD87AAC3819A3BB69 /* UIViewController+SEGScreen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+SEGScreen.h"; path = "Segment/Internal/UIViewController+SEGScreen.h"; sourceTree = "<group>"; };
+		7F9B9413831250DB44B968662D4CBAFB /* ResourceBundle-Nimbbl_SDK-Nimbbl_SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Nimbbl_SDK-Nimbbl_SDK-Info.plist"; sourceTree = "<group>"; };
+		80210470EA71C3BF600EE848C856A7AB /* Pods-PaymentApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PaymentApp"; path = Pods_PaymentApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80CE6AE218D27196F9CDBC85A65DBE4C /* SEGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGUtils.h; path = Segment/Internal/SEGUtils.h; sourceTree = "<group>"; };
+		84B9EF90F564498A31A8FE34EA92DB20 /* SEGMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGMacros.h; path = Segment/Internal/SEGMacros.h; sourceTree = "<group>"; };
+		85CACBACA77A3FB1C467F68408FAFBC5 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		87ED34AF5AC1516D798C266DE7D04C0C /* SEGAnalyticsUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAnalyticsUtils.h; path = Segment/Classes/SEGAnalyticsUtils.h; sourceTree = "<group>"; };
+		8B3594ED651DA6561567F900CDBB77A4 /* MBProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CA7C836208E489E8675DC80BB82AE4C /* SEGFileStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGFileStorage.h; path = Segment/Internal/SEGFileStorage.h; sourceTree = "<group>"; };
+		8DAFDC116A0CB78D6571DB86E8BBF1AB /* SEGState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGState.h; path = Segment/Internal/SEGState.h; sourceTree = "<group>"; };
+		9032AA96C6CB379DA181CAA29BA1C15E /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		93EC97FB0A606FAB26489D9A8D271FDC /* SEGStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGStorage.h; path = Segment/Classes/SEGStorage.h; sourceTree = "<group>"; };
+		9579728AC25483BAC852F3F641560D51 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		971AA0CBA362522E854131F1A2343506 /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
+		9B6725B782188F18CB76A740433F14E4 /* DropDown */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C18D3BF99CD10D327D06D74ECE0D3A9 /* Nimbbl_SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Nimbbl_SDK-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A9848E6152C68386138347AEF68D71C7 /* MBProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
-		BA06B057B39C3A2CBD75970074932885 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		C0A9AE209220C7BD1007864D8F8E9E0C /* Nimbbl-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Nimbbl-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		9E582C912CC9F0ACDE849423268A9611 /* SEGSerializableValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGSerializableValue.h; path = Segment/Classes/SEGSerializableValue.h; sourceTree = "<group>"; };
+		A39033C8B02F519216D4FA3C467F623E /* Nimbbl_SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nimbbl_SDK-dummy.m"; sourceTree = "<group>"; };
+		A39D0C02BE7E3F0933405A3323245C73 /* Nimbbl_SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimbbl_SDK-prefix.pch"; sourceTree = "<group>"; };
+		A3DB7D87FA14CB8153197D409C76036A /* SEGGroupPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGGroupPayload.h; path = Segment/Classes/SEGGroupPayload.h; sourceTree = "<group>"; };
+		A69CEFDE27A891F607DB7C12B5E51C62 /* SEGScreenPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGScreenPayload.h; path = Segment/Classes/SEGScreenPayload.h; sourceTree = "<group>"; };
+		AB8AC9B25362324AD722AA9A6F773DC3 /* SEGMiddleware.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGMiddleware.m; path = Segment/Classes/SEGMiddleware.m; sourceTree = "<group>"; };
+		AC16E683A545EB82843398FD5CDDBC94 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		ACD16D52B4F45E2F4728C54F04B182BE /* SEGTrackPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGTrackPayload.m; path = Segment/Classes/SEGTrackPayload.m; sourceTree = "<group>"; };
+		B05F737879D5C6E674F3B4CE1E4EF2A3 /* SEGPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGPayload.h; path = Segment/Classes/SEGPayload.h; sourceTree = "<group>"; };
+		BA1655E7027B09410A017A7C44E77546 /* SEGReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGReachability.h; path = Segment/Classes/SEGReachability.h; sourceTree = "<group>"; };
+		BA23AEAA8CB0FE14BE1A998CA1566212 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		BB3BE2FCB8EF20FD067715C1BE1ABEE6 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		BFDDF906423F9BA07B5FF696EE1238CB /* Analytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Analytics.release.xcconfig; sourceTree = "<group>"; };
+		C21495255235337627188E6EB2E7F8CB /* UIViewController+SEGScreen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+SEGScreen.m"; path = "Segment/Internal/UIViewController+SEGScreen.m"; sourceTree = "<group>"; };
+		C3328A006252EFE84488BD0506163EF2 /* Analytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Analytics-dummy.m"; sourceTree = "<group>"; };
+		C56FEF2FB368A896B76A51B9242C5F8A /* Analytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Analytics-umbrella.h"; sourceTree = "<group>"; };
+		C9B0C87F693E4BE37D83CE1FAE7F390E /* MBProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
+		CA0E95D6771BEC8F4BBC6E3D595F1571 /* SEGAliasPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAliasPayload.h; path = Segment/Classes/SEGAliasPayload.h; sourceTree = "<group>"; };
 		CABB98090B02C131F86931CB9BE54B7A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		CB342FF58CA5A5D1282C84E02280A34F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CB8E4300F772D6778CF7560416504DE5 /* NimbblCheckoutSDK-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NimbblCheckoutSDK-Swift.h"; path = "NimbblCheckoutSDK.framework/Headers/NimbblCheckoutSDK-Swift.h"; sourceTree = "<group>"; };
+		CE3108E2FCA1F552F4DD02628136593D /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		D110E03A9871F83A55F7BD9768B0A4A9 /* NSViewController+SEGScreen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSViewController+SEGScreen.h"; path = "Segment/Internal/NSViewController+SEGScreen.h"; sourceTree = "<group>"; };
 		D401DD0C08544B908AB42A954D32A05F /* Pods-PaymentApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PaymentApp-dummy.m"; sourceTree = "<group>"; };
-		DB57E9C194C62A88A132CB7029D6801B /* Nimbbl-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Nimbbl-SDK.debug.xcconfig"; sourceTree = "<group>"; };
-		E841861F169E40C0C2D994DBD44CD28C /* NimbblCheckoutViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NimbblCheckoutViewController.h; path = NimbblCheckoutSDK.framework/Headers/NimbblCheckoutViewController.h; sourceTree = "<group>"; };
+		D50010F3FF41EE57655B667E0B6D1FAE /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		D6143C92F1A8A62A5848EAE673F7EA03 /* SEGAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAnalytics.h; path = Segment/Classes/SEGAnalytics.h; sourceTree = "<group>"; };
+		D827D27A719243B6A40717ACAB477678 /* SEGUserDefaultsStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGUserDefaultsStorage.m; path = Segment/Internal/SEGUserDefaultsStorage.m; sourceTree = "<group>"; };
+		DA2A466FFAFFE801245A468CEEEA4E6E /* SEGIntegrationsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGIntegrationsManager.h; path = Segment/Internal/SEGIntegrationsManager.h; sourceTree = "<group>"; };
+		DACC4ECB592271F5A68F48CE83F79A98 /* mandalas.jpeg */ = {isa = PBXFileReference; includeInIndex = 1; name = mandalas.jpeg; path = Nimbbl_SDK/Assets/mandalas.jpeg; sourceTree = "<group>"; };
+		DDC7349B35098E2002C82A87A1AA9FC4 /* NimbblUpiSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbblUpiSupport.swift; path = Nimbbl_SDK/Classes/NimbblUpiSupport.swift; sourceTree = "<group>"; };
+		DE2F753124FB0370CF0E3309C8F69C7D /* SEGStoreKitTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGStoreKitTracker.m; path = Segment/Internal/SEGStoreKitTracker.m; sourceTree = "<group>"; };
+		DE8D5BAF06DCF8A7FD7490D936D90D9F /* SEGIdentifyPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGIdentifyPayload.m; path = Segment/Classes/SEGIdentifyPayload.m; sourceTree = "<group>"; };
+		DEEA333CE7F62B88A54F11D201E9DFE8 /* SEGPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGPayload.m; path = Segment/Classes/SEGPayload.m; sourceTree = "<group>"; };
+		DF80A3AD802619DE3062FE031C66A3A4 /* NimbblCheckout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbblCheckout.swift; path = Nimbbl_SDK/Classes/NimbblCheckout.swift; sourceTree = "<group>"; };
+		E2124CB750226BDB1EE4EAADB9F9263B /* SEGSegmentIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGSegmentIntegration.h; path = Segment/Classes/SEGSegmentIntegration.h; sourceTree = "<group>"; };
+		E3ABB88743A6D600E3B487A4CDB4C2E4 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
+		E538943321BE3278BDE2F1785A37DD2D /* SEGAnalyticsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAnalyticsConfiguration.h; path = Segment/Classes/SEGAnalyticsConfiguration.h; sourceTree = "<group>"; };
+		E6059AC646F03C7C909D4BF250E1B931 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		E6F4E418D29C9A448F5B608E9C168F46 /* NimbblCheckoutVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbblCheckoutVC.swift; path = Nimbbl_SDK/Classes/NimbblCheckoutVC.swift; sourceTree = "<group>"; };
+		ED0D54D08F665281242EB4EE5B15467A /* Nimbbl_SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Nimbbl_SDK.modulemap; sourceTree = "<group>"; };
+		ED30D138626266816D07877A3596E2CE /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		EE6063E9EA073155C398BE0A28FCB4FC /* SEGCrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGCrypto.h; path = Segment/Classes/SEGCrypto.h; sourceTree = "<group>"; };
+		EFE68179385A77859C3790444994CB8A /* NSData+SEGGZIP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+SEGGZIP.h"; path = "Segment/Internal/NSData+SEGGZIP.h"; sourceTree = "<group>"; };
 		F6F89C13AEFC76737179263F0D62A3A0 /* Pods-PaymentApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PaymentApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F7EDC8F4F7B63611F33A39AD11AAE0BF /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
-		F9EE59689F3324375E07AEE2A7A3F86C /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		FAF9E5F5A6F301344BB1610EB7E750CA /* SEGReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGReachability.m; path = Segment/Classes/SEGReachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1AA3C16B4B3AB40CA74BDDADEF5C143A /* Frameworks */ = {
+		808BE4E171BD75B6477EC2B77490C2B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7596519E375DA27F6E7D05D440757055 /* CoreGraphics.framework in Frameworks */,
-				AC1B5B34F7456E723EC031A496585471 /* Foundation.framework in Frameworks */,
-				F612969E69DE5F072AD96720641B1184 /* QuartzCore.framework in Frameworks */,
+				34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A063A0ADFB1F2F53FB884A46D83E59D /* Frameworks */ = {
+		BBCD615DF62E24420AC314FEAC864DEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11519D6F7D100CF6E2682E014EB928EE /* Foundation.framework in Frameworks */,
+				03CECEE22D8E1E49F65B13C57E17ED50 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE03895263AAEE571EBEF3ECFA0BD00E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBABEACB9D6BAFBFEF53F68D336A53BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B74A1ED08897C734ED76B37803D3CE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6DC8F0C2894774845C1DD2E7CA07B0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFAC1D4EBD53A048346210536741DF13 /* CoreGraphics.framework in Frameworks */,
+				0AA33EBB857A5205F87C09CCB99EAC74 /* Foundation.framework in Frameworks */,
+				B52177FF72FDAC3EDB7195DE98F5501E /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9317F702DE62597D68E3125AEC7F6D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B60271DFC4B92181CFBAFB8C42EB18B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,17 +350,119 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		40F05BDCDBE26A058CF02D1928ED0A79 /* Nimbbl-SDK */ = {
+		072A0ED4692C077218CA450B456415E8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				28FF67071E3CE2C5754DF6BEB10353CB /* NimbblCheckoutSDK.h */,
-				CB8E4300F772D6778CF7560416504DE5 /* NimbblCheckoutSDK-Swift.h */,
-				E841861F169E40C0C2D994DBD44CD28C /* NimbblCheckoutViewController.h */,
-				5B1137B11DC692542D045CD6996D0295 /* Frameworks */,
-				ED02DE9E3EF5CA5D10444F15596F8BE9 /* Support Files */,
+				0B062E3CD7A01015989198F5EA4C3ED6 /* MBProgressHUD.modulemap */,
+				D50010F3FF41EE57655B667E0B6D1FAE /* MBProgressHUD-dummy.m */,
+				7212947BDD4976F6245C869543D6A5CB /* MBProgressHUD-Info.plist */,
+				BA23AEAA8CB0FE14BE1A998CA1566212 /* MBProgressHUD-prefix.pch */,
+				9032AA96C6CB379DA181CAA29BA1C15E /* MBProgressHUD-umbrella.h */,
+				C9B0C87F693E4BE37D83CE1FAE7F390E /* MBProgressHUD.debug.xcconfig */,
+				8B3594ED651DA6561567F900CDBB77A4 /* MBProgressHUD.release.xcconfig */,
 			);
-			name = "Nimbbl-SDK";
-			path = "Nimbbl-SDK";
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		2B06A61D0EF09F87EA9950A8693D0717 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				EFE68179385A77859C3790444994CB8A /* NSData+SEGGZIP.h */,
+				458FFBB4BF10CD0ADDE915EFEC1220A6 /* NSData+SEGGZIP.m */,
+				D110E03A9871F83A55F7BD9768B0A4A9 /* NSViewController+SEGScreen.h */,
+				1022C1831282901A3BFCCEE8CB03B419 /* NSViewController+SEGScreen.m */,
+				7F46C2D2B26DF714D40CA5B1FC1CAB22 /* SEGAES256Crypto.h */,
+				517CA5FB374CE81A5DDA2D5EF743E3C7 /* SEGAES256Crypto.m */,
+				CA0E95D6771BEC8F4BBC6E3D595F1571 /* SEGAliasPayload.h */,
+				65DC19CD7DA031F29F17EF0AFA6FA8F3 /* SEGAliasPayload.m */,
+				D6143C92F1A8A62A5848EAE673F7EA03 /* SEGAnalytics.h */,
+				48B6D1E967317A33F6FD45F072C9DC3A /* SEGAnalytics.m */,
+				E538943321BE3278BDE2F1785A37DD2D /* SEGAnalyticsConfiguration.h */,
+				759A1E8B64F7B27AB6F372EBACDE413B /* SEGAnalyticsConfiguration.m */,
+				87ED34AF5AC1516D798C266DE7D04C0C /* SEGAnalyticsUtils.h */,
+				3D044AF13F3A267CA825D4AE1D2E1160 /* SEGAnalyticsUtils.m */,
+				041174BC190B843A74780D126A6F08F5 /* SEGContext.h */,
+				68417A09710A9D233E19FBF7E6CD3496 /* SEGContext.m */,
+				EE6063E9EA073155C398BE0A28FCB4FC /* SEGCrypto.h */,
+				8CA7C836208E489E8675DC80BB82AE4C /* SEGFileStorage.h */,
+				2C5AA0C7FE8ADD0C743C72E228EDD8DA /* SEGFileStorage.m */,
+				A3DB7D87FA14CB8153197D409C76036A /* SEGGroupPayload.h */,
+				497841F675B755F87F4E061496B21A84 /* SEGGroupPayload.m */,
+				190C833DEC20B54009995FEE00D7AD30 /* SEGHTTPClient.h */,
+				1BCF3C311DC0F4846650378DE314983B /* SEGHTTPClient.m */,
+				6A4346FE533ADBC5A17D023A45FD7F9C /* SEGIdentifyPayload.h */,
+				DE8D5BAF06DCF8A7FD7490D936D90D9F /* SEGIdentifyPayload.m */,
+				279143DDDA41C2D8051ACDEDDC12FF54 /* SEGIntegration.h */,
+				1ABD5827B81C7DA079F151545BF575AC /* SEGIntegrationFactory.h */,
+				DA2A466FFAFFE801245A468CEEEA4E6E /* SEGIntegrationsManager.h */,
+				520D80FBED99360D01D2D671B3E626AA /* SEGIntegrationsManager.m */,
+				84B9EF90F564498A31A8FE34EA92DB20 /* SEGMacros.h */,
+				6C67E4E9EAF453A88BCC63E22B02CE8B /* Segment.h */,
+				050F4C339AED2B313EF3234694CA6400 /* SEGMiddleware.h */,
+				AB8AC9B25362324AD722AA9A6F773DC3 /* SEGMiddleware.m */,
+				B05F737879D5C6E674F3B4CE1E4EF2A3 /* SEGPayload.h */,
+				DEEA333CE7F62B88A54F11D201E9DFE8 /* SEGPayload.m */,
+				BA1655E7027B09410A017A7C44E77546 /* SEGReachability.h */,
+				FAF9E5F5A6F301344BB1610EB7E750CA /* SEGReachability.m */,
+				A69CEFDE27A891F607DB7C12B5E51C62 /* SEGScreenPayload.h */,
+				74BED48C831A5AC1F559975AC1EF21F5 /* SEGScreenPayload.m */,
+				7C06DC082C935900C2C76A02F0814641 /* SEGScreenReporting.h */,
+				E2124CB750226BDB1EE4EAADB9F9263B /* SEGSegmentIntegration.h */,
+				23F71B77548ECFF5CCB32FA17E1C4D06 /* SEGSegmentIntegration.m */,
+				3EC455F89C91CC2AA6F7DD6ED9C4936A /* SEGSegmentIntegrationFactory.h */,
+				089D6EA470D7D44C294825028D6FD0DE /* SEGSegmentIntegrationFactory.m */,
+				9E582C912CC9F0ACDE849423268A9611 /* SEGSerializableValue.h */,
+				8DAFDC116A0CB78D6571DB86E8BBF1AB /* SEGState.h */,
+				6D7E1B62887D107B8706249A425B559C /* SEGState.m */,
+				93EC97FB0A606FAB26489D9A8D271FDC /* SEGStorage.h */,
+				1A6782F6AC48971D42279FA9ADF929B8 /* SEGStoreKitTracker.h */,
+				DE2F753124FB0370CF0E3309C8F69C7D /* SEGStoreKitTracker.m */,
+				3515DF00823DEDCB99F0C0AC28B419A0 /* SEGTrackPayload.h */,
+				ACD16D52B4F45E2F4728C54F04B182BE /* SEGTrackPayload.m */,
+				45FBB976F50545602ACD184923674759 /* SEGUserDefaultsStorage.h */,
+				D827D27A719243B6A40717ACAB477678 /* SEGUserDefaultsStorage.m */,
+				80CE6AE218D27196F9CDBC85A65DBE4C /* SEGUtils.h */,
+				78CDB1C64F9BBD4FD9C4519F2ED3920D /* SEGUtils.m */,
+				1C924F7B111739F1DD3209AFA073DB07 /* SEGWebhookIntegration.h */,
+				59972A40AC76E8C97938F43189E4655C /* SEGWebhookIntegration.m */,
+				7F6958A236F31F5AD87AAC3819A3BB69 /* UIViewController+SEGScreen.h */,
+				C21495255235337627188E6EB2E7F8CB /* UIViewController+SEGScreen.m */,
+				3417154F695755ACD4CE72E2F8D7D9AA /* Support Files */,
+			);
+			name = Analytics;
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		3417154F695755ACD4CE72E2F8D7D9AA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F6C83AE17424FB5F8340A4F91FFB3D0 /* Analytics.modulemap */,
+				C3328A006252EFE84488BD0506163EF2 /* Analytics-dummy.m */,
+				500512437FBAF699C1A9D2BFB6742C56 /* Analytics-Info.plist */,
+				15F7CD423D55966FBF8EE4F49A839926 /* Analytics-prefix.pch */,
+				C56FEF2FB368A896B76A51B9242C5F8A /* Analytics-umbrella.h */,
+				4D96EDDFDB7FACD5DA5D1A0D40AA70B3 /* Analytics.debug.xcconfig */,
+				BFDDF906423F9BA07B5FF696EE1238CB /* Analytics.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Analytics";
+			sourceTree = "<group>";
+		};
+		48A6D9251317E33B45BF123C5C18E123 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				5C2B3BF4836B6BB6538DE533A4C93FC3 /* DPDConstants.swift */,
+				85CACBACA77A3FB1C467F68408FAFBC5 /* DPDKeyboardListener.swift */,
+				57607DDF6EF56237FE9AC31F2FD0979E /* DPDUIView+Extension.swift */,
+				514E598077F229903D9DF5EAAB58DDC5 /* DropDown.swift */,
+				E6059AC646F03C7C909D4BF250E1B931 /* DropDown+Appearance.swift */,
+				9579728AC25483BAC852F3F641560D51 /* DropDownCell.swift */,
+				C31954765C6A6956CCE62FEE654FDC02 /* Resources */,
+				6355771A1E3401E86367BD39BFBDC6C9 /* Support Files */,
+			);
+			name = DropDown;
+			path = DropDown;
 			sourceTree = "<group>";
 		};
 		4D6691D8CB3D493006A8661C7CFED31A /* iOS */ = {
@@ -132,14 +473,6 @@
 				51AB40693B18F443F75126966ED13E47 /* QuartzCore.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		5B1137B11DC692542D045CD6996D0295 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3824991AF0DFD59676FC673CDD1E6D9A /* NimbblCheckoutSDK.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5EA334C7751A97EF244DF5939778CB16 /* Pods-PaymentApp */ = {
@@ -159,35 +492,89 @@
 			path = "Target Support Files/Pods-PaymentApp";
 			sourceTree = "<group>";
 		};
-		947116196D1F785D22A1A386798FE14D /* Pods */ = {
+		6355771A1E3401E86367BD39BFBDC6C9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E26DBD602DBD48210C5150158B61DAA2 /* MBProgressHUD */,
-				40F05BDCDBE26A058CF02D1928ED0A79 /* Nimbbl-SDK */,
+				ED30D138626266816D07877A3596E2CE /* DropDown.modulemap */,
+				341FD46436CE583DC6A2EE09DD599E4F /* DropDown-dummy.m */,
+				73BEF2D4EC3E1FE710FBB646E1E80013 /* DropDown-Info.plist */,
+				CE3108E2FCA1F552F4DD02628136593D /* DropDown-prefix.pch */,
+				BB3BE2FCB8EF20FD067715C1BE1ABEE6 /* DropDown-umbrella.h */,
+				971AA0CBA362522E854131F1A2343506 /* DropDown.debug.xcconfig */,
+				E3ABB88743A6D600E3B487A4CDB4C2E4 /* DropDown.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
+			sourceTree = "<group>";
+		};
+		859130DA86AB6430026D181E0AB16AD8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED0D54D08F665281242EB4EE5B15467A /* Nimbbl_SDK.modulemap */,
+				A39033C8B02F519216D4FA3C467F623E /* Nimbbl_SDK-dummy.m */,
+				9C18D3BF99CD10D327D06D74ECE0D3A9 /* Nimbbl_SDK-Info.plist */,
+				A39D0C02BE7E3F0933405A3323245C73 /* Nimbbl_SDK-prefix.pch */,
+				6D1353F31E1DFC060158ED2F0F5A0356 /* Nimbbl_SDK-umbrella.h */,
+				43C40DA88B71353C827D1A5EC0C0F77E /* Nimbbl_SDK.debug.xcconfig */,
+				583080B130840E5AFD9D15028CC8AF38 /* Nimbbl_SDK.release.xcconfig */,
+				7F9B9413831250DB44B968662D4CBAFB /* ResourceBundle-Nimbbl_SDK-Nimbbl_SDK-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Nimbbl_SDK";
+			sourceTree = "<group>";
+		};
+		8D03E92D8079999D44141A6B04F2C4DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B06A61D0EF09F87EA9950A8693D0717 /* Analytics */,
+				48A6D9251317E33B45BF123C5C18E123 /* DropDown */,
+				AC7E4CA2C43ECFE7B413EA0188F85630 /* MBProgressHUD */,
+				C593A1AC97A8EF214D2C466451D4D62C /* Nimbbl_SDK */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		953EBCB2603B328C82E8FDE442555EE2 /* Support Files */ = {
+		AC7E4CA2C43ECFE7B413EA0188F85630 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				2211A8E5CF25535A4FB8CDF5F0355832 /* MBProgressHUD.modulemap */,
-				5BF0E53EFD1108457423280B087C3D36 /* MBProgressHUD-dummy.m */,
-				F7EDC8F4F7B63611F33A39AD11AAE0BF /* MBProgressHUD-Info.plist */,
-				BA06B057B39C3A2CBD75970074932885 /* MBProgressHUD-prefix.pch */,
-				2481AE227216383B73BD9ED9F3601D0A /* MBProgressHUD-umbrella.h */,
-				A9848E6152C68386138347AEF68D71C7 /* MBProgressHUD.debug.xcconfig */,
-				5AC05694B540E48ED860426D1BE559B5 /* MBProgressHUD.release.xcconfig */,
+				3A457F2D878D80CDF91CE6648A740CB8 /* MBProgressHUD.h */,
+				5225DD39F274A8C4BA2D7BDACDA8DCA5 /* MBProgressHUD.m */,
+				072A0ED4692C077218CA450B456415E8 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MBProgressHUD";
+			name = MBProgressHUD;
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		AA5B0D4B8D264DB367161440F6838315 /* Products */ = {
+		C31954765C6A6956CCE62FEE654FDC02 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */,
-				80210470EA71C3BF600EE848C856A7AB /* Pods_PaymentApp.framework */,
+				AC16E683A545EB82843398FD5CDDBC94 /* DropDownCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C593A1AC97A8EF214D2C466451D4D62C /* Nimbbl_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				DF80A3AD802619DE3062FE031C66A3A4 /* NimbblCheckout.swift */,
+				E6F4E418D29C9A448F5B608E9C168F46 /* NimbblCheckoutVC.swift */,
+				DDC7349B35098E2002C82A87A1AA9FC4 /* NimbblUpiSupport.swift */,
+				D25466E57D796BBBBAF9920F828DB4A9 /* Resources */,
+				859130DA86AB6430026D181E0AB16AD8 /* Support Files */,
+			);
+			name = Nimbbl_SDK;
+			path = Nimbbl_SDK;
+			sourceTree = "<group>";
+		};
+		CEC7F177D755AACED87BAB6E4E89409E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CE4B6165F426953A26419DF02AF0D93 /* Analytics */,
+				9B6725B782188F18CB76A740433F14E4 /* DropDown */,
+				8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */,
+				2CF51679AB64F29F40D506EAD1238029 /* Nimbbl_SDK */,
+				10541F2B9D53DC671D43158DF3BF932D /* Nimbbl_SDK-Nimbbl_SDK */,
+				80210470EA71C3BF600EE848C856A7AB /* Pods-PaymentApp */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,31 +584,21 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
-				947116196D1F785D22A1A386798FE14D /* Pods */,
-				AA5B0D4B8D264DB367161440F6838315 /* Products */,
+				8D03E92D8079999D44141A6B04F2C4DD /* Pods */,
+				CEC7F177D755AACED87BAB6E4E89409E /* Products */,
 				FAB9F0BF43D38958A42CC24633716170 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		E26DBD602DBD48210C5150158B61DAA2 /* MBProgressHUD */ = {
+		D25466E57D796BBBBAF9920F828DB4A9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5226BC585F35CC12ED42E50A276224ED /* MBProgressHUD.h */,
-				F9EE59689F3324375E07AEE2A7A3F86C /* MBProgressHUD.m */,
-				953EBCB2603B328C82E8FDE442555EE2 /* Support Files */,
+				1CD7E8AE2DD4990F6310C0B611C86B06 /* dropdown_icon.png */,
+				DACC4ECB592271F5A68F48CE83F79A98 /* mandalas.jpeg */,
+				2EB835260F500AAA5D558A8030FC4989 /* rhomboid.jpeg */,
+				064D9CBFD9263604CCC5C66FFCF3402C /* setting.png */,
 			);
-			name = MBProgressHUD;
-			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		ED02DE9E3EF5CA5D10444F15596F8BE9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DB57E9C194C62A88A132CB7029D6801B /* Nimbbl-SDK.debug.xcconfig */,
-				C0A9AE209220C7BD1007864D8F8E9E0C /* Nimbbl-SDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Nimbbl-SDK";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		FAB9F0BF43D38958A42CC24633716170 /* Targets Support Files */ = {
@@ -235,34 +612,109 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2F4550A0D74C0534F60127CAD5CE8EF2 /* Headers */ = {
+		5D82C29ACD851E6EA219B34A73C961F5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				935848C3C4D79D1CBBA6B9AD1310559C /* Pods-PaymentApp-umbrella.h in Headers */,
+				67E941CADB3CDDEEDF8CE4EE4A4A05BB /* MBProgressHUD.h in Headers */,
+				5BAC1EF86D0E57E44E404B2796993561 /* MBProgressHUD-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F0EBAB2761523F18BB73EB4DC5CBEC3 /* Headers */ = {
+		5FD9B5844D20A24DC72689BB0A706175 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81B9E2F21B1EF9FE4E769103108DEA8A /* MBProgressHUD-umbrella.h in Headers */,
-				EB2A4C29BE958CCB03B3FD9FAB927F1F /* MBProgressHUD.h in Headers */,
+				0870A0F465D8E0FA34031BB0DB2E86D2 /* Pods-PaymentApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB1E65B4A6AFCA25CE06F67A29F3C3D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696482E99269E8CDB0500799BBCE6449 /* Analytics-umbrella.h in Headers */,
+				91FC06B3714F103E9192A6F68B15C6D3 /* NSData+SEGGZIP.h in Headers */,
+				EC8A5632EB1726B2A002A4DCFB358577 /* NSViewController+SEGScreen.h in Headers */,
+				3AB503D076E809F546D53CA1B0B2B9EB /* SEGAES256Crypto.h in Headers */,
+				71B2EE32B16BB71EB3B48EFDB2D2C3F7 /* SEGAliasPayload.h in Headers */,
+				DA418C3CD9199C93A7213AED57B6CFEA /* SEGAnalytics.h in Headers */,
+				52AC7272006789E5B32F5AFAE4ABD6A0 /* SEGAnalyticsConfiguration.h in Headers */,
+				AD948BE8E64B07B2A2F94D660C4C82DC /* SEGAnalyticsUtils.h in Headers */,
+				36204C6E3833C361DC25A78BE407CFFA /* SEGContext.h in Headers */,
+				933E8D19F4112CDB3FF768CC633F818B /* SEGCrypto.h in Headers */,
+				6C15EB240AF9CD8016D266AA7C9DAE6C /* SEGFileStorage.h in Headers */,
+				FEA67B1EE1DFCC8C2D02902FD242CB4E /* SEGGroupPayload.h in Headers */,
+				486BD878A6185651850D19FE0A855E54 /* SEGHTTPClient.h in Headers */,
+				EFA3349CA5229101281160A984AD2A30 /* SEGIdentifyPayload.h in Headers */,
+				188BC6A856F53497BBDBD32B7CB98EC1 /* SEGIntegration.h in Headers */,
+				B30E2A2E2B816303880718FC3CF2A3FA /* SEGIntegrationFactory.h in Headers */,
+				7D2B6FEB7994AD7BE07AF9ACF5A9505E /* SEGIntegrationsManager.h in Headers */,
+				0D66936A8F524646E62755CAF117F98F /* SEGMacros.h in Headers */,
+				A0450A08E026AD13C29F3B42E1B0C7E6 /* Segment.h in Headers */,
+				2A1C5D8D777D5AFF9BCEC8EC3D411CA7 /* SEGMiddleware.h in Headers */,
+				DF130B86CF3EC0670CDC46E6EBF9CF7B /* SEGPayload.h in Headers */,
+				557DEBE4CCD20864381A8DB339AF20A8 /* SEGReachability.h in Headers */,
+				A6FC39F9419F15E470434B9A4493A261 /* SEGScreenPayload.h in Headers */,
+				EC8EB7F1686CA218646849333EC81E38 /* SEGScreenReporting.h in Headers */,
+				320FE5C08207B115B6E98D4CE09381DD /* SEGSegmentIntegration.h in Headers */,
+				436C18C3ABB3D6A52A91AC93DD5DDBF0 /* SEGSegmentIntegrationFactory.h in Headers */,
+				977382C0F7359E7BE08753FF6D96EAB9 /* SEGSerializableValue.h in Headers */,
+				233849E7247678C8D08019E67C118B57 /* SEGState.h in Headers */,
+				7459C4D5936B411B548372351C1C4029 /* SEGStorage.h in Headers */,
+				CC83DEB29EE23239AB0C219054E1F5DE /* SEGStoreKitTracker.h in Headers */,
+				559868601F3A25B77CD8E5FCFFA830B9 /* SEGTrackPayload.h in Headers */,
+				A98268D73144D9B64DB82E9C5CD362AD /* SEGUserDefaultsStorage.h in Headers */,
+				E8F4C396C82107C84CD2BC08A6F29D0B /* SEGUtils.h in Headers */,
+				E210A24CB9C0CBA8F67D3B445619AAAF /* SEGWebhookIntegration.h in Headers */,
+				FD47E3FBF25FAEB299E1182C5EC419F8 /* UIViewController+SEGScreen.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960AF1B2C63FDF7A065F9BA7F8735BEC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E9F722518766C1F441FE1210DECC4EF /* Nimbbl_SDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97CE91431E229797751455423C79CA4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		17681F27556D8490F9D602A807EA1FA2 /* Nimbbl_SDK-Nimbbl_SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F534E9DB89C17A9457D6BA9CBDE9E968 /* Build configuration list for PBXNativeTarget "Nimbbl_SDK-Nimbbl_SDK" */;
+			buildPhases = (
+				5BE0482E4F5DB01072047339ADED2195 /* Sources */,
+				BE03895263AAEE571EBEF3ECFA0BD00E /* Frameworks */,
+				75C5CB8D3E4C442E714627F0EA9AB618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nimbbl_SDK-Nimbbl_SDK";
+			productName = Nimbbl_SDK;
+			productReference = 10541F2B9D53DC671D43158DF3BF932D /* Nimbbl_SDK-Nimbbl_SDK */;
+			productType = "com.apple.product-type.bundle";
+		};
 		82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70191416B9573C7ABB42333A08FA2DE4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildConfigurationList = A7BD2681E97C00DCC2EF91B0EBA76110 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
 			buildPhases = (
-				8F0EBAB2761523F18BB73EB4DC5CBEC3 /* Headers */,
-				D2F84DC2E2DB3628B17B3841F2837477 /* Sources */,
-				1AA3C16B4B3AB40CA74BDDADEF5C143A /* Frameworks */,
-				435BF4D16B2F9CAB6E7F883F30E32B74 /* Resources */,
+				5D82C29ACD851E6EA219B34A73C961F5 /* Headers */,
+				7E957D4020E4C4BC633BF50F7F51E5F6 /* Sources */,
+				D6DC8F0C2894774845C1DD2E7CA07B0C /* Frameworks */,
+				C0E0F7D28F4D633128D0F53BEAE34D3D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -270,27 +722,87 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */;
+			productReference = 8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */;
 			productType = "com.apple.product-type.framework";
 		};
 		88070A94ACA4EE266F40A6321E1B2B8D /* Pods-PaymentApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7140F0C29A9BC0FF6C94A6804F7F941D /* Build configuration list for PBXNativeTarget "Pods-PaymentApp" */;
+			buildConfigurationList = 35B011C64807F735C6B6FEB3F0B42074 /* Build configuration list for PBXNativeTarget "Pods-PaymentApp" */;
 			buildPhases = (
-				2F4550A0D74C0534F60127CAD5CE8EF2 /* Headers */,
-				0FE4B0CC998912023AC4DDBE607024D0 /* Sources */,
-				8A063A0ADFB1F2F53FB884A46D83E59D /* Frameworks */,
-				A9DEAE92D2C9D70765A61877CE48928D /* Resources */,
+				5FD9B5844D20A24DC72689BB0A706175 /* Headers */,
+				AF9260D5ABBF51035AB8AFF7385BD51F /* Sources */,
+				D9317F702DE62597D68E3125AEC7F6D7 /* Frameworks */,
+				EE8F8B6BE19EF09F2D0729B771C5C442 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1730B5F77F69CC03D4216422F8FC8FC5 /* PBXTargetDependency */,
-				0C8D9296436D98FD4FF8C16E96A64BAD /* PBXTargetDependency */,
+				8326606D8402A0F1F6CA3BD797AFEFAA /* PBXTargetDependency */,
+				7E596F4444732780C74EBE1CA71A3B02 /* PBXTargetDependency */,
+				8713E9B543B8C0469293906FC89F68A6 /* PBXTargetDependency */,
+				64B27FF16FF058A8D428F478E2ED86A2 /* PBXTargetDependency */,
 			);
 			name = "Pods-PaymentApp";
-			productName = "Pods-PaymentApp";
-			productReference = 80210470EA71C3BF600EE848C856A7AB /* Pods_PaymentApp.framework */;
+			productName = Pods_PaymentApp;
+			productReference = 80210470EA71C3BF600EE848C856A7AB /* Pods-PaymentApp */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F50A15C556FFEAD343B69C7EA54092F /* Analytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C82CF342ECAA25D327784BCC2142AA0 /* Build configuration list for PBXNativeTarget "Analytics" */;
+			buildPhases = (
+				8EB1E65B4A6AFCA25CE06F67A29F3C3D /* Headers */,
+				26CFFA719DD65B6D9EB6CE86738586CB /* Sources */,
+				BBCD615DF62E24420AC314FEAC864DEF /* Frameworks */,
+				E44F3D1CA8DB6B8E4EEFFBF009542FE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Analytics;
+			productName = Segment;
+			productReference = 2CE4B6165F426953A26419DF02AF0D93 /* Analytics */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0D4AE04D86B7D958A55241094FA2232 /* Nimbbl_SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0242DAD1C2A70C0B5CE9E34B4A108B6B /* Build configuration list for PBXNativeTarget "Nimbbl_SDK" */;
+			buildPhases = (
+				960AF1B2C63FDF7A065F9BA7F8735BEC /* Headers */,
+				B3B4D1A090EF4A7EAEF72AD8ACA44A47 /* Sources */,
+				CBABEACB9D6BAFBFEF53F68D336A53BE /* Frameworks */,
+				94B2F2360BC7931A7CECCF913FC17327 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				858B0C16B601F0EC0BF372929682DFB0 /* PBXTargetDependency */,
+				B8F630EEDE70706BA4DF3DABEC143B40 /* PBXTargetDependency */,
+				EF2905574AEDF5BEF79E801416EA77FA /* PBXTargetDependency */,
+				D36D7AE48FA87A294B25568325857929 /* PBXTargetDependency */,
+			);
+			name = Nimbbl_SDK;
+			productName = Nimbbl_SDK;
+			productReference = 2CF51679AB64F29F40D506EAD1238029 /* Nimbbl_SDK */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53052E6CBA1E65D6EF818199E617AC68 /* Build configuration list for PBXNativeTarget "DropDown" */;
+			buildPhases = (
+				97CE91431E229797751455423C79CA4F /* Headers */,
+				48864C435B3DB37698CF568C638CF98F /* Sources */,
+				808BE4E171BD75B6477EC2B77490C2B1 /* Frameworks */,
+				EFDE5B37A62BFF2F9A9BD2023B960CD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropDown;
+			productName = DropDown;
+			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -299,121 +811,222 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = AA5B0D4B8D264DB367161440F6838315 /* Products */;
+			productRefGroup = CEC7F177D755AACED87BAB6E4E89409E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				8F50A15C556FFEAD343B69C7EA54092F /* Analytics */,
+				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
 				82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */,
-				14D3D471ABDA194DF196019ACF3E579C /* Nimbbl-SDK */,
+				A0D4AE04D86B7D958A55241094FA2232 /* Nimbbl_SDK */,
+				17681F27556D8490F9D602A807EA1FA2 /* Nimbbl_SDK-Nimbbl_SDK */,
 				88070A94ACA4EE266F40A6321E1B2B8D /* Pods-PaymentApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		435BF4D16B2F9CAB6E7F883F30E32B74 /* Resources */ = {
+		75C5CB8D3E4C442E714627F0EA9AB618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206678F0A741D642CA934AE40B47F82C /* dropdown_icon.png in Resources */,
+				7AAAEC37C5B639E2898A04673ACAAD3F /* mandalas.jpeg in Resources */,
+				241E6C7F5CBF36D4855CA4FB68D794EE /* rhomboid.jpeg in Resources */,
+				EE1F199A3BDE7A7D7DE2E39E655173FF /* setting.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94B2F2360BC7931A7CECCF913FC17327 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB50504C7B7A2B5CB9F36D3E02CA467 /* Nimbbl_SDK-Nimbbl_SDK in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E0F7D28F4D633128D0F53BEAE34D3D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9DEAE92D2C9D70765A61877CE48928D /* Resources */ = {
+		E44F3D1CA8DB6B8E4EEFFBF009542FE1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE8F8B6BE19EF09F2D0729B771C5C442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDE5B37A62BFF2F9A9BD2023B960CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0FE4B0CC998912023AC4DDBE607024D0 /* Sources */ = {
+		26CFFA719DD65B6D9EB6CE86738586CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F853129DE931528829B480A8A130DC8D /* Pods-PaymentApp-dummy.m in Sources */,
+				D12FFE6A85B5F33032CF7A0E5E0B38EC /* Analytics-dummy.m in Sources */,
+				0A43C46F296C13246F66DED267B66149 /* NSData+SEGGZIP.m in Sources */,
+				B45E14C48D7529A682DC0E250B8B2DAD /* NSViewController+SEGScreen.m in Sources */,
+				8C0EEA8F56098154A880D893217F9840 /* SEGAES256Crypto.m in Sources */,
+				31B3F82B0183E280D3D11664CD5ED456 /* SEGAliasPayload.m in Sources */,
+				D46BEBE7D76C095DA757891E51CBE4DC /* SEGAnalytics.m in Sources */,
+				9CE5AE2FB94BAD317BA572E0E77D6A05 /* SEGAnalyticsConfiguration.m in Sources */,
+				8C041E2C23D6ACADF2EE2C5BEC52CC55 /* SEGAnalyticsUtils.m in Sources */,
+				17A2B46B5710553AC3B357E082C8D1A7 /* SEGContext.m in Sources */,
+				C43E523441207FCA51B655C1EBE61AA1 /* SEGFileStorage.m in Sources */,
+				BD40B43498BB7B136A0CB0D66714CD80 /* SEGGroupPayload.m in Sources */,
+				89D257FA9D2CD19B84D6D32EC19B7628 /* SEGHTTPClient.m in Sources */,
+				3EFCD773E3C83EBD7D056CAE92E0B173 /* SEGIdentifyPayload.m in Sources */,
+				FB1F2CF0EC25B86AE8955D60BB7BA9B6 /* SEGIntegrationsManager.m in Sources */,
+				39F7A5121334D7A9996A148E4ECDE8AC /* SEGMiddleware.m in Sources */,
+				7D5C076A4746677A37F564C78018E0DA /* SEGPayload.m in Sources */,
+				7C5CC019B581871B3A8F985B81EF24D5 /* SEGReachability.m in Sources */,
+				C7C07A0ACC33F28B0941BEEA01049CB9 /* SEGScreenPayload.m in Sources */,
+				12A5DB6B55FD8432DC4FCD2A5CD1ACD2 /* SEGSegmentIntegration.m in Sources */,
+				AC2BB0E786ED3585E7457985E8C9C92F /* SEGSegmentIntegrationFactory.m in Sources */,
+				3CCFE6AA09821263964112C456248DC5 /* SEGState.m in Sources */,
+				F73144C3DF66F22DA7CA846601BD3AAE /* SEGStoreKitTracker.m in Sources */,
+				2B1EF9F938A82FDD6FE44792DBE27FE0 /* SEGTrackPayload.m in Sources */,
+				860EC0A5D4E5DE26C3FC5BA1B64BAFA8 /* SEGUserDefaultsStorage.m in Sources */,
+				B41B7CA65465FD40292222CBB4387589 /* SEGUtils.m in Sources */,
+				EA29DF308095E0DA82A77CB9C00852AE /* SEGWebhookIntegration.m in Sources */,
+				AD1EF9ED5EF7C111B42B8D0DACB3DADD /* UIViewController+SEGScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2F84DC2E2DB3628B17B3841F2837477 /* Sources */ = {
+		48864C435B3DB37698CF568C638CF98F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABF20F73D27572CD97071A6D4DB9004 /* MBProgressHUD-dummy.m in Sources */,
-				70EE1C774C978E1876AE6CA1224E897D /* MBProgressHUD.m in Sources */,
+				74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */,
+				89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */,
+				B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */,
+				84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */,
+				515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */,
+				907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */,
+				BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE0482E4F5DB01072047339ADED2195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E957D4020E4C4BC633BF50F7F51E5F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0097064E7F7D3F413161738CC5C25EEC /* MBProgressHUD.m in Sources */,
+				58C91B4AB36E6B16421106CA634C58EF /* MBProgressHUD-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9260D5ABBF51035AB8AFF7385BD51F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C49372E6A8309E368DA7950BB369395 /* Pods-PaymentApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B4D1A090EF4A7EAEF72AD8ACA44A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273D25A2A9F3F602D9CBD0359512B4C2 /* Nimbbl_SDK-dummy.m in Sources */,
+				FD1E0EC0F9D19270E064069288DF805F /* NimbblCheckout.swift in Sources */,
+				5895AF1F10A4AC8238F553D69DBD2F26 /* NimbblCheckoutVC.swift in Sources */,
+				F05906C96830D2FC446CF41928E1E4EF /* NimbblUpiSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C8D9296436D98FD4FF8C16E96A64BAD /* PBXTargetDependency */ = {
+		64B27FF16FF058A8D428F478E2ED86A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Nimbbl-SDK";
-			target = 14D3D471ABDA194DF196019ACF3E579C /* Nimbbl-SDK */;
-			targetProxy = CAD1876906E65A1AABB0C03E57326C0D /* PBXContainerItemProxy */;
+			name = Nimbbl_SDK;
+			target = A0D4AE04D86B7D958A55241094FA2232 /* Nimbbl_SDK */;
+			targetProxy = 433CBCCCB5F2AA5CE5495C332614BFC0 /* PBXContainerItemProxy */;
 		};
-		1730B5F77F69CC03D4216422F8FC8FC5 /* PBXTargetDependency */ = {
+		7E596F4444732780C74EBE1CA71A3B02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = 48D40EDFC07DFA67E6A3A7D7C72FB75E /* PBXContainerItemProxy */;
+		};
+		8326606D8402A0F1F6CA3BD797AFEFAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Analytics;
+			target = 8F50A15C556FFEAD343B69C7EA54092F /* Analytics */;
+			targetProxy = 1E5D08410CDF1B0B61DF6CA5DA9A2BF4 /* PBXContainerItemProxy */;
+		};
+		858B0C16B601F0EC0BF372929682DFB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Analytics;
+			target = 8F50A15C556FFEAD343B69C7EA54092F /* Analytics */;
+			targetProxy = 55EA74D308C47EB8267D00A1CFDA24C9 /* PBXContainerItemProxy */;
+		};
+		8713E9B543B8C0469293906FC89F68A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
 			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
-			targetProxy = 2D560224C78DE981B2229B57AED897F7 /* PBXContainerItemProxy */;
+			targetProxy = 519832E74C21A13965A35AB4A6EBBE3F /* PBXContainerItemProxy */;
+		};
+		B8F630EEDE70706BA4DF3DABEC143B40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = 9343C75121D8140929EEE16584FA0A1A /* PBXContainerItemProxy */;
+		};
+		D36D7AE48FA87A294B25568325857929 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Nimbbl_SDK-Nimbbl_SDK";
+			target = 17681F27556D8490F9D602A807EA1FA2 /* Nimbbl_SDK-Nimbbl_SDK */;
+			targetProxy = 29A327B81A266EC336B5249978CBEBA0 /* PBXContainerItemProxy */;
+		};
+		EF2905574AEDF5BEF79E801416EA77FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
+			targetProxy = 76E37B0DA8B7AB89FB653EA6CE11A733 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		18C95B0B1A74C347BC75D9C32DAC02F7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CE6B9F8E7CFB30528C3B73629D1AAB6 /* Pods-PaymentApp.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PaymentApp/Pods-PaymentApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PaymentApp/Pods-PaymentApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5744474E105899C766962A65202106F1 /* Debug */ = {
+		01E90414CB472816CA8FAC5F58977070 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14CA429683EA840DED6765C3C34163CA /* Pods-PaymentApp.debug.xcconfig */;
 			buildSettings = {
@@ -429,7 +1042,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-PaymentApp/Pods-PaymentApp-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,125 +1063,138 @@
 			};
 			name = Debug;
 		};
-		6F85F12224300D9C02ADDD75F90AFF4D /* Debug */ = {
+		0ABEC14B3C7B31DA99B9FD756F9F38D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB57E9C194C62A88A132CB7029D6801B /* Nimbbl-SDK.debug.xcconfig */;
+			baseConfigurationReference = 43C40DA88B71353C827D1A5EC0C0F77E /* Nimbbl_SDK.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Nimbbl_SDK/Nimbbl_SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nimbbl_SDK/Nimbbl_SDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = "Target Support Files/Nimbbl_SDK/Nimbbl_SDK.modulemap";
+				PRODUCT_MODULE_NAME = Nimbbl_SDK;
+				PRODUCT_NAME = Nimbbl_SDK;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+		159C66D5429A64B2FCAD29B7B28B122B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C40DA88B71353C827D1A5EC0C0F77E /* Nimbbl_SDK.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Nimbbl_SDK";
+				IBSC_MODULE = Nimbbl_SDK;
+				INFOPLIST_FILE = "Target Support Files/Nimbbl_SDK/ResourceBundle-Nimbbl_SDK-Nimbbl_SDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = Nimbbl_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2C943CFE29088D4F58A88ADAF92AAFC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CE6B9F8E7CFB30528C3B73629D1AAB6 /* Pods-PaymentApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PaymentApp/Pods-PaymentApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PaymentApp/Pods-PaymentApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68CB904F2F520BA5B8056516179D8A49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 583080B130840E5AFD9D15028CC8AF38 /* Nimbbl_SDK.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Nimbbl_SDK";
+				IBSC_MODULE = Nimbbl_SDK;
+				INFOPLIST_FILE = "Target Support Files/Nimbbl_SDK/ResourceBundle-Nimbbl_SDK-Nimbbl_SDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = Nimbbl_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8AFA6E0C5FB345C5886AD12ACB714356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFDDF906423F9BA07B5FF696EE1238CB /* Analytics.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Analytics/Analytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Analytics/Analytics-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		806574236869223F3752130DC1B9FE3F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0A9AE209220C7BD1007864D8F8E9E0C /* Nimbbl-SDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		93A2FF79E2EC721C724D10C8C2AF1B64 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AC05694B540E48ED860426D1BE559B5 /* MBProgressHUD.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = MBProgressHUD;
-				PRODUCT_NAME = MBProgressHUD;
+				MODULEMAP_FILE = "Target Support Files/Analytics/Analytics.modulemap";
+				PRODUCT_MODULE_NAME = Segment;
+				PRODUCT_NAME = Segment;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -580,41 +1206,7 @@
 			};
 			name = Release;
 		};
-		CBFD66C31CBBEE4A24B97D6774480A7E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9848E6152C68386138347AEF68D71C7 /* MBProgressHUD.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = MBProgressHUD;
-				PRODUCT_NAME = MBProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -667,7 +1259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -680,41 +1272,339 @@
 			};
 			name = Debug;
 		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C24518E891FAA59668669823639498EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3ABB88743A6D600E3B487A4CDB4C2E4 /* DropDown.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C3C37B487645A54D043C2C18BF002F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B3594ED651DA6561567F900CDBB77A4 /* MBProgressHUD.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE569755C8FE69395D8E6C347DC7A5F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9B0C87F693E4BE37D83CE1FAE7F390E /* MBProgressHUD.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971AA0CBA362522E854131F1A2343506 /* DropDown.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E6F94EA7B6E772B25F34039182A1AB3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 583080B130840E5AFD9D15028CC8AF38 /* Nimbbl_SDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Nimbbl_SDK/Nimbbl_SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nimbbl_SDK/Nimbbl_SDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Nimbbl_SDK/Nimbbl_SDK.modulemap";
+				PRODUCT_MODULE_NAME = Nimbbl_SDK;
+				PRODUCT_NAME = Nimbbl_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6BE01EC5F12BF72B08490FF606EEF80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D96EDDFDB7FACD5DA5D1A0D40AA70B3 /* Analytics.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Analytics/Analytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Analytics/Analytics-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Analytics/Analytics.modulemap";
+				PRODUCT_MODULE_NAME = Segment;
+				PRODUCT_NAME = Segment;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0242DAD1C2A70C0B5CE9E34B4A108B6B /* Build configuration list for PBXNativeTarget "Nimbbl_SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ABEC14B3C7B31DA99B9FD756F9F38D0 /* Debug */,
+				E6F94EA7B6E772B25F34039182A1AB3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35B011C64807F735C6B6FEB3F0B42074 /* Build configuration list for PBXNativeTarget "Pods-PaymentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01E90414CB472816CA8FAC5F58977070 /* Debug */,
+				2C943CFE29088D4F58A88ADAF92AAFC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
-				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70191416B9573C7ABB42333A08FA2DE4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+		4C82CF342ECAA25D327784BCC2142AA0 /* Build configuration list for PBXNativeTarget "Analytics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBFD66C31CBBEE4A24B97D6774480A7E /* Debug */,
-				93A2FF79E2EC721C724D10C8C2AF1B64 /* Release */,
+				F6BE01EC5F12BF72B08490FF606EEF80 /* Debug */,
+				8AFA6E0C5FB345C5886AD12ACB714356 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7140F0C29A9BC0FF6C94A6804F7F941D /* Build configuration list for PBXNativeTarget "Pods-PaymentApp" */ = {
+		53052E6CBA1E65D6EF818199E617AC68 /* Build configuration list for PBXNativeTarget "DropDown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5744474E105899C766962A65202106F1 /* Debug */,
-				18C95B0B1A74C347BC75D9C32DAC02F7 /* Release */,
+				E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */,
+				C24518E891FAA59668669823639498EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AED8EBD74402F85A46D07B3280B88AC4 /* Build configuration list for PBXAggregateTarget "Nimbbl-SDK" */ = {
+		A7BD2681E97C00DCC2EF91B0EBA76110 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F85F12224300D9C02ADDD75F90AFF4D /* Debug */,
-				806574236869223F3752130DC1B9FE3F /* Release */,
+				DE569755C8FE69395D8E6C347DC7A5F8 /* Debug */,
+				C3C37B487645A54D043C2C18BF002F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F534E9DB89C17A9457D6BA9CBDE9E968 /* Build configuration list for PBXNativeTarget "Nimbbl_SDK-Nimbbl_SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				159C66D5429A64B2FCAD29B7B28B122B /* Debug */,
+				68CB904F2F520BA5B8056516179D8A49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

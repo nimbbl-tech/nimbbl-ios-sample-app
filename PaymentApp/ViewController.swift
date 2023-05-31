@@ -6,7 +6,8 @@
 //
 
 import UIKit
-import NimbblCheckoutSDK
+//import NimbblCheckoutSDK
+import Nimbbl_SDK
 import MBProgressHUD
 
 typealias JSONObject = Dictionary<String,Any>
@@ -23,7 +24,11 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        nimbblChekout = NimbblCheckout(accessKey: "<access_key>", delegate: self)
+//        nimbblChekout = NimbblCheckout(accessKey: "<access_key>", delegate: self)
+        nimbblChekout = NimbblCheckout(accessKey: "<access_key>",
+                                              serviceURL: "<service_url>",
+                                              paymentURL: "<payment_url>",
+                                              delegate: self)
         
         for i in 1...2{
             
