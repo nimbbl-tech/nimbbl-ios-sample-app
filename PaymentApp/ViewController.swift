@@ -17,15 +17,17 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
     @IBOutlet weak var tblProducts: UITableView!
     
     var arrProducts = [ProductModal]()
+    var environment: Setting.Environment = .dev
     
     fileprivate var nimbblChekout: NimbblCheckout!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
       //  nimbblChekout = NimbblCheckout(accessKey: "<access_key>", delegate: self)
         nimbblChekout = NimbblCheckout(accessKey: "<access_key>", serviceURL: "<serviceURL>", paymentURL: "<paymentURL>", delegate: self)
+        // access_key_1MwvMkKkweorz0ry
+        initializeNimbblSDK()
         for i in 1...2{
             
             let title = i == 1 ? "Colourful Mandalas" : "Designer Triangles."
@@ -42,9 +44,17 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
         
     }
     
+    func initializeNimbblSDK() {
+        
+        nimbblChekout = NimbblCheckout(accessKey: Setting.accessKey,
+                                       serviceURL: environment.apiURL,
+                                       paymentURL: environment.paymentURL,
+                                       delegate: self)
+        //        nimbblChekout.enableUATEnvironment = true
+    }
     
     fileprivate func openPaymentScreen(orderId: String) {
-        let options = ["orderID": orderId]
+        let options = ["order_id": orderId]
         nimbblChekout.show(options: options, displayController: self)
     }
     
@@ -58,7 +68,8 @@ class ViewController: UIViewController, NimbblCheckoutDelegate {
         let parameters = "{ \"product_id\":\(product.productId) }"
         let postData = parameters.data(using: .utf8)
 
-        var request = URLRequest(url: URL(string: "https://shop.nimbbl.tech/api/orders/create")!)
+        let urlString = String(format: "%@orders/create", environment.baseURL)
+        var request = URLRequest(url: URL(string: urlString)!)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
         request.httpBody = postData
@@ -123,9 +134,25 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard segue.identifier == "SETTIING_SEGUE" else { return }
+        
+        if let destinationController = segue.destination as? SettingsViewController {
+            destinationController.currentEnvironment = environment
+            destinationController.delegate = self
+        }
+    }
     
 }
 
+extension ViewController: SettingsViewControllerDelegate {
+    
+    func environmentChanged(_ environment: Setting.Environment) {
+        self.environment = environment
+        initializeNimbblSDK()
+    }
+}
 
 class ProductTVC: UITableViewCell {
     
