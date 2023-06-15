@@ -1,0 +1,6 @@
+framework module Nimbbl_SDK {
+  umbrella header "Nimbbl_SDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
